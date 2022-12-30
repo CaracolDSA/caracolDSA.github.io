@@ -1,5 +1,5 @@
 # Site settings
-title:          Caracol DSA
+title:          Caracol DSA 🐌
 description:    "Degrowth Caucus DSA site built using Jekyll and Github pages"
 baseurl:        ""
 url:            "https://CaracolDSA.github.io"
@@ -32,7 +32,7 @@ plugins:
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       5
+paginate:       3
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
