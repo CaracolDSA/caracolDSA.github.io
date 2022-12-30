@@ -1371,7 +1371,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         // Embed Button
         let embed = document.createElement('div');
         embed.className = 'nutshell-bubble-overflow-embed-button';
-        embed.innerHTML = `<img src='${Nutshell._dataURIImage}'/>`;
+        ///////embed.innerHTML = `<img src='${Nutshell._dataURIImage}'/>`;
         embed.onclick = ()=>{
             Nutshell.showEmbedModal(expandable.href, expandable.textContent);
         };
