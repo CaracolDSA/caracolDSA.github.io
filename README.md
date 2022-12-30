@@ -1,179 +1,132 @@
-<img src="https://img.shields.io/liberapay/receives/verfasor.svg?logo=liberapay">
+# Tale
 
-**NOTE: The netlify demo is broken as I don't use the service anymore. The repo should work OOB nonetheless. Please create an issue if it isn't working as intended.**
+[![Gem Version](https://badge.fury.io/rb/tale.svg)](https://badge.fury.io/rb/tale)
 
-# SparrowX - Jekyll Netlify CMS Boilerplate
+Tale is a minimal Jekyll theme curated for storytellers. Checkout the demo [here](https://chesterhow.github.io/tale/).
 
-A clean minimal Jekyll theme for SEO-focused writers. The theme loads fast and it's Netlify CMS-ready. SparrowX is a remix of sparrow by [lingxz](https://github.com/lingxz/sparrow).
+![Tale screenshot](http://i.imgur.com/pXZrtmo.png)
 
-[Live Demo](https://sparrowx.netlify.app)
+## Features
+- Easy installation
+- Compatible with GitHub Pages
+- Responsive design (looks just as good on mobile)
+- Syntax highlighting, with the help of Pygments
+- Markdown and HTML text formatting
+- Pagination of posts
+- Sticky posts
+- Tags
+- Excerpt management
+- [Disqus comments (can be enabled if needed)](#enabling-comments)
 
-- [Features](#features)
-- [Install](#install)
-- [Up and running with Netlify CMS](#up-and-running-with-netlify-cms)
-    - [General configuration](#general-configuration)
-    - [Disqus](#disqus)
-    - [Google analytics](#google-analytics)
-    - [Collections](#collections)
-    - [Pagination](#pagination)
-    - [Navigation](#navigation)
-    - [Front matter defaults](#front-matter-defaults)
-    - [Other](#other)
-- [Credits](#credits)
+## Installation
+There are 3 ways to install this theme
 
-## Screenshot 
+1. Install it as a Ruby Gem (for self-hosted sites)
+2. Install it with the `jekyll-remote-theme` plugin (for GitHub Pages hosted sites)
+3. Fork the project directly
 
-![](screenshot.png)
+### Ruby Gem method
+1. Add this line to your `Gemfile`:
 
-## Website Speed Test 
-
-![](pagespeed.png)
-
-## Original Sparrow Features
-
-- Fully compatible with Github Pages
-- Configurable and responsive multi layer menu, adapted from [slimmenu](https://github.com/adnantopal/slimmenu)
-- Disqus integration
-- [Font Awesome icons](http://fontawesome.io/) included
-- Google analytics
-- Social sharing using [rrssb](https://www.rrssb.ml/)
-- 404 page included
-- Atom feed generated with [jekyll-feed](https://github.com/jekyll/jekyll-feed)
-- Pagination enabled for blog using [jekyll-paginate](https://github.com/jekyll/jekyll-paginate)
-- Basic SEO with Facebook Open Graph tags and Twitter cards
-
-## SparrowX Features
-
--  Fully compatible with Netlify CMS (one-click setup).
--  Added new custom variables like updated, headerimage, feature-img, sitemap and tag.
--  The theme renders system font-stack.
--  Compressed JS.
--  Improved load time and reduced file requests.
--  _redirects feature
-
-## Install
-
-Just fork this repo and replace the posts with your own. Also rename the sample poetry collection to replace it with your own collection, or just delete it if you don't need to use collections. The example is poetry, but you can easily revamp this into essays, short stories, portfolio, or whatever your creative work is. 
-
-
-## Up and running with Netlify CMS
-
-[Click here](https://sparrowx.netlify.app/netlify-cms-jekyll-setup) to read the documentation for Netlify CMS.
-
-For customization, see below. 
-
-### General configuration
-
-Customize these values in the `_config.yml` file: 
-
-```yaml
-title                    : "SparrowX"
-description              : "A clean minimal Jekyll theme for SEO-focused writers."
-favicon                  : "/assets/images/image.png" # You can use base64 encoded images.
-url                      : "https://sparrowx.m1q.net" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog" leave blank if no subpath
-
-# Site Author
-author:
-  name                   : "Mighil" # appears in the footer and atom feed
+```ruby
+gem "tale"
 ```
 
+2. Install the theme's gems and dependencies:
 
-### Disqus
-
-To activate Disqus, fill in your disqus shortname: 
-
-```yaml
-comments                 : true # set it to false to disable comments
-disqus:
-  shortname              : your_shortname
+```bash
+$ bundle
 ```
 
-### Google analytics
-
-Enable google analytics by filling in your tracking ID: 
+3. In `_config.yml` add these lines:
 
 ```yaml
-analytics:
-  google:
-    tracking_id          : # add your google tracking id here
+theme:      tale
+
+permalink:  /:year-:month-:day/:title
+paginate:   5
 ```
 
-### Collections
+Remove any other `theme:` lines.
 
-If you are using collections, be sure to replace this with your collection name: 
+4. Rename `index.md` to `index.html`. Without this, the `jekyll-paginate` gem will not work.
+
+5. In `about.md`, change the `layout:` field to `post`:
+
+```Markdown
+layout: post
+```
+
+### GitHub Pages method
+1. Add these 2 lines in to your `Gemfile`:
+
+```ruby
+gem "jekyll-remote-theme"
+gem "jekyll-paginate"
+```
+
+2. Install the newly added gems:
+
+```bash
+$ bundle
+```
+
+3. In `_config.yml` add these lines:
 
 ```yaml
-collections:
-  poetry:
-    output: true
-    permalink: /:collection/:title/
+remote_theme: chesterhow/tale
+
+permalink:    /:year-:month-:day/:title
+paginate:     5
+
+plugins:
+  - jekyll-paginate
+  - jekyll-remote-theme
 ```
 
-### Pagination
+Remove any other `theme:` or `remote_theme:` lines.
 
-Currently, pagination is set to a the blog page. Unfortunately Jekyll does not yet support pagination on multiple pages. 
+4. Rename `index.md` to `index.html`. Without this, the `jekyll-paginate` gem will not work.
 
-If you want to paginate on a different page, simply change the `paginate_path` value in the config file and create the relevant page. 
+5. In `about.md`, change the `layout:` field to `post`:
+
+```Markdown
+layout: post
+```
+
+### Fork method
+1. Fork this repository
+
+2. Delete the unnecessary files/folders: `CODE_OF_CONDUCT.md`, `LICENSE`, `README.md`, `tale.gemspec`
+
+3. Delete the `baseurl` line in `_config.yml`:
 
 ```yaml
-paginate: 5 # amount of posts to show
-paginate_path: "/blog/page:num/"
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+baseurl:  "/tale"   # delete this line
 ```
 
-### Navigation
+## Usage
+Once you've installed the theme, you're ready to work on your Jekyll site. To start off, I would recommend updating `_config.yml` with your site's details.
 
-You can change the navigation links in `_data/navigation.yml`.
+To build and serve your site, run:
 
-### Front matter defaults
-
-At the bottom of the config file, you can also set [front matter defaults](https://jekyllrb.com/docs/configuration/#front-matter-defaults) so that you don't have to repeat the same front matter for every post. This is an example: 
-
-```yaml
-# Front matter defaults
-defaults:
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: page
-      comments: false
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      comments: true
-      share: true
-  # _poetry
-  - scope:
-      path: ""
-      type: poetry
-    values:
-      layout: post
-      share: false
+```bash
+$ bundle exec jekyll serve
 ```
 
-### How tags work
+And you're all set! Head over to http://127.0.0.1:4000/ to see your site in action.
 
-You should create specific .md files within ```/tag/``` before using the variable.
+### Enabling Comments
+Comments are disabled by default. To enable them, look for the following line in `_config.yml` and change `jekyll-tale` to your site's Disqus id.
 
-### Other
+```yml
+disqus: jekyll-tale
+```
 
-To enhance SEO, you can add your twitter username to `_config.yml`. 
+Next, add `comments: true` to the YAML front matter of the posts which you would like to enable comments for.
 
-You can also add an image path for the `og_image` value in the config file, for a default open graph sharing image. This value can be overridden in individual posts by using **headerimage** variable. 
+## Contributing
+Found a bug or have a suggestion? Feel free to create an issue or make a pull request!
 
-Your default image Netlify CMS uploads will go to /images/.
-
-For the various config options see the [sample config file for the demo site](https://github.com/mighildotcom/sparrowx/blob/master/_config.yml)
-
-The color schemes and fonts can also be customized through scss, by editing the relevant variable in `_variables.scss`. 
-
-## Credits
-
-- Base theme sparrow by [lingxz](https://github.com/lingxz/sparrow)
-- Icon made by [Freepik](https://www.freepik.com/) from www.flaticon.com 
+## License
+See [LICENSE](https://github.com/chesterhow/tale/blob/master/LICENSE)
