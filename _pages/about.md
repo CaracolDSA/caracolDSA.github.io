@@ -13,13 +13,24 @@ profile:
     <p>123 your address street</p>
     <p>Your City, State 12345</p>
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
 ---
+Edited the original About.md page. I made the news: selected_papers: and social: properties FALSE so they shouldnt appear at all. Einsteins pic still up, whatever. I also integrated Nutshell, hopefulyl it works.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+## Other Fun Stuff
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+You want to embed an explanation, but no-one's written it yet & you can't be bothered to either? **Get the intro from a Wikipedia article** by linking to it!
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+[:Catgirl on English Wikipedia](https://en.wikipedia.org/wiki/Catgirl) links to `https://en.wikipedia.org/wiki/Catgirl)`
+
+[:Baguette on French Wikipedia](https://fr.wikipedia.org/wiki/Baguette_(pain)) links to `https://fr.wikipedia.org/wiki/Baguette_(pain)`
+
+[:Universe on Simple Wikipedia](https://simple.wikipedia.org/wiki/Universe) links to `https://simple.wikipedia.org/wiki/Universe`
+
+**You can also link to YouTube videos so they can expand in-place.** You can even specify a specific starting time – on a YouTube page, click 'Share' then 'Start at [time]'.
+
+[:Knife-Wielding Tentacle, starting at 0:36](https://youtu.be/pQ2dI_B_Ycg?t=36) links to `https://youtu.be/pQ2dI_B_Ycg?t=36`
+
+For more advanced features (like how to make a section hidden by default, get sections by text-search instead of headings, add words before/after an embedded snippet, etc...) check out [the documentation!](https://github.com/ncase/nutshell#advanced-features--options)
