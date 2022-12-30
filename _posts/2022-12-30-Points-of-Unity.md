@@ -2,7 +2,7 @@
 layout: post
 title:  "Points of Unity"
 author: "Caracol"
-tags: POUs
+tags: DSA-Degrowth
 excerpt_separator: <!--more-->
 
 ---
