@@ -10,8 +10,8 @@ google_analytics:
 # Author
 author:
   name:         Caracol DSA 🐌
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  url:          
+  email:       
 
 # Build settings
 markdown:       kramdown
@@ -32,7 +32,7 @@ plugins:
 
 # Permalinks
 permalink:      /posts/:year-:month-:day/:title
-paginate:       5
+paginate:       10
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
