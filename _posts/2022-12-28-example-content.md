@@ -2,7 +2,7 @@
 layout: post
 title: "Example Content"
 author: "Lalo et al"
-tags: Example
+tags: Tale
 excerpt_separator: <!--more-->
 ---
 
