@@ -1,12 +1,15 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Documentation"
+    url: /documentation
+  - title: "Netlify CMS"
+    url: /netlify-cms-jekyll-setup
+  - title: "Blog"
+    url: /blog        
+  - title: "Submenu"
+    url: /
+    children: 
+      - title: "Sitemap"
+        url: /sitemap.xml
+      - title: "RSS"
+        url: /feed.xml   
