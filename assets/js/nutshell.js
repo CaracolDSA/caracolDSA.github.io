@@ -1369,13 +1369,13 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         bubble.appendChild(overflow);
 
         // Embed Button
-        /*let embed = document.createElement('div');
+       let embed = document.createElement('div');
         embed.className = 'nutshell-bubble-overflow-embed-button';
         embed.innerHTML = `<img src='${Nutshell._dataURIImage}'/>`;
         embed.onclick = ()=>{
             Nutshell.showEmbedModal(expandable.href, expandable.textContent);
         };
-        overflow.appendChild(embed); */
+        overflow.appendChild(embed);
 
         // Section
         let section = document.createElement('div');
@@ -1523,14 +1523,14 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                 sectionID = headingText.replace(/[^A-Za-z0-9]/g,''), // bye punctuation
                 permalink = Nutshell.thisPageURL+"#"+sectionID;
 
-            // Embed button
+            /* Embed button
             let embedButton = document.createElement('div');
             embedButton.className = 'nutshell-heading-embed';
             embedButton.innerHTML = `<img src='${Nutshell._dataURIImage}'/>`;
             embedButton.onclick = ()=>{
                 Nutshell.showEmbedModal(permalink, headingText);
             };
-            heading.appendChild(embedButton);
+            heading.appendChild(embedButton);*/
 
         });
 
@@ -1730,7 +1730,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         width: 0; /* don't force newline */
         display: inline-block;
         position: relative;
-        top:0; left:0;
+        top:2em; left:0;
 
         /* Button, reveal on hover */
         opacity:0;
