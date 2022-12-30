@@ -25,12 +25,3 @@ You want to embed an explanation, but no-one's written it yet & you can't be bot
 
 [:Catgirl on English Wikipedia](https://en.wikipedia.org/wiki/Catgirl) links to `https://en.wikipedia.org/wiki/Catgirl)`
 
-[:Baguette on French Wikipedia](https://fr.wikipedia.org/wiki/Baguette_(pain)) links to `https://fr.wikipedia.org/wiki/Baguette_(pain)`
-
-[:Universe on Simple Wikipedia](https://simple.wikipedia.org/wiki/Universe) links to `https://simple.wikipedia.org/wiki/Universe`
-
-**You can also link to YouTube videos so they can expand in-place.** You can even specify a specific starting time – on a YouTube page, click 'Share' then 'Start at [time]'.
-
-[:Knife-Wielding Tentacle, starting at 0:36](https://youtu.be/pQ2dI_B_Ycg?t=36) links to `https://youtu.be/pQ2dI_B_Ycg?t=36`
-
-For more advanced features (like how to make a section hidden by default, get sections by text-search instead of headings, add words before/after an embedded snippet, etc...) check out [the documentation!](https://github.com/ncase/nutshell#advanced-features--options)
