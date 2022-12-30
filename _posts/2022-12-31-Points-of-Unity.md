@@ -75,23 +75,23 @@ Our caucus is thus dedicated to the following purposes.
 
 # Points of Unity
 
-## 1. [Degrowth is necessary to stop and reverse the planetary ecological crises that capitalism and its intrinsic dependency on endless growth have caused.](#x-1-degrowth-is-necessary-to-stop-and-reverse-the-planetary-ecological-crises-that-capitalism-and-its-intrinsic-dependency-on-endless-growth-have-caused)
+### 1. [Degrowth is necessary to stop and reverse the planetary ecological crises that capitalism and its intrinsic dependency on endless growth have caused.](#x-1-degrowth-is-necessary-to-stop-and-reverse-the-planetary-ecological-crises-that-capitalism-and-its-intrinsic-dependency-on-endless-growth-have-caused)
 
-## 2. [We affirm the need for a radical Green New Deal—without growth. ](#x-2-we-affirm-the-need-for-a-radical-green-new-dealwithout-growth)
+### 2. [We affirm the need for a radical Green New Deal—without growth. ](#x-2-we-affirm-the-need-for-a-radical-green-new-dealwithout-growth)
 
-## 3. [Degrowth is necessary in the Global North for humanity to maximize our chances of limiting the worst effects of the climate crisis.](#x-3-degrowth-is-necessary-in-the-global-north-for-humanity-to-maximize-our-chances-of-limiting-the-worst-effects-of-the-climate-crisis)
+### 3. [Degrowth is necessary in the Global North for humanity to maximize our chances of limiting the worst effects of the climate crisis.](#x-3-degrowth-is-necessary-in-the-global-north-for-humanity-to-maximize-our-chances-of-limiting-the-worst-effects-of-the-climate-crisis)
 
-## 4. [Degrowth is necessary to realize global justice for all human beings and communities.](#x-4-degrowth-is-necessary-to-realize-global-justice-for-all-human-beings-and-communities)
+### 4. [Degrowth is necessary to realize global justice for all human beings and communities.](#x-4-degrowth-is-necessary-to-realize-global-justice-for-all-human-beings-and-communities)
 
-## 5. [Degrowth is ecofeminist, centering the safe reproduction of life on Earth in perpetuity.](#x-5-degrowth-is-ecofeminist-centering-the-safe-reproduction-of-life-on-earth-in-perpetuity)
+### 5. [Degrowth is ecofeminist, centering the safe reproduction of life on Earth in perpetuity.](#x-5-degrowth-is-ecofeminist-centering-the-safe-reproduction-of-life-on-earth-in-perpetuity)
 
-## 6. [We recognize the roles of different forms of technology in a degrowth transition.](#x-6-we-recognize-the-roles-of-different-forms-of-technology-in-a-degrowth-transition)
+### 6. [We recognize the roles of different forms of technology in a degrowth transition.](#x-6-we-recognize-the-roles-of-different-forms-of-technology-in-a-degrowth-transition)
 
-## 7. [We acknowledge that—concomitant with the Left’s immediate task of building a multiracial, mass, working class movement to transform capitalism—the Left must help birth a new, post-carbon cultural hegemony as soon as possible.](#x-7-we-acknowledge-thatconcomitant-with-the-lefts-immediate-task-of-building-a-multiracial-mass-working-class-movement-to-transform-capitalismthe-left-must-help-birth-a-new-post-carbon-cultural-hegemony-as-soon-as-possible)
+### 7. [We acknowledge that—concomitant with the Left’s immediate task of building a multiracial, mass, working class movement to transform capitalism—the Left must help birth a new, post-carbon cultural hegemony as soon as possible.](#x-7-we-acknowledge-thatconcomitant-with-the-lefts-immediate-task-of-building-a-multiracial-mass-working-class-movement-to-transform-capitalismthe-left-must-help-birth-a-new-post-carbon-cultural-hegemony-as-soon-as-possible)
 
-## 8. [A synthesis of ecosocialism and degrowth is necessary to create a just and sustainable world.](#x-8-a-synthesis-of-ecosocialism-and-degrowth-is-necessary-to-create-a-just-and-sustainable-world)
+### 8. [A synthesis of ecosocialism and degrowth is necessary to create a just and sustainable world.](#x-8-a-synthesis-of-ecosocialism-and-degrowth-is-necessary-to-create-a-just-and-sustainable-world)
 
-### :x 1. Degrowth is necessary to stop and reverse the planetary ecological crises that capitalism and its intrinsic dependency on endless growth have caused.
+## :x 1. Degrowth is necessary to stop and reverse the planetary ecological crises that capitalism and its intrinsic dependency on endless growth have caused.
 
 1. Capitalism is a political and economic world-system that derives value from the exploitation of labor and natural resources. Its dynamic of exploitation (the profit motive) drives the endless accumulation, or growth, of capital wealth by externalizing its social and ecological costs. In turn, these costs have endlessly accumulated, resulting in a planetary crisis, of which climate change is a part. 
 
