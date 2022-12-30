@@ -1,9 +1,0 @@
----
-layout: default
-title: "Posts"
-permalink: /posts/
----
-{% for post in site.posts %}
-{% if post.sticky %} {% include catalogue_item.html sticky='true' %} {% endif %} {% endfor %} {% for post in
-paginator.posts %} {% include catalogue_item.html %} {% endfor %}
-{% if paginator.previous_page %} ← {% endif %} {% if paginator.next_page %} → {% endif %} {{ paginator.page }}

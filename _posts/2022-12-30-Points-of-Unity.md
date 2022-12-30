@@ -8,7 +8,10 @@ sticky: true
 hidden: true
 ---
 
- ![image](/assets/SVGs/green_spiral.svg)
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 366 392">
+  <path fill="#693" stroke="#693" stroke-width="7.4" d="M140 63.1c-20.5 2.2-42.8 18-58.2 41.5-8.7 13.3-12.8 21.6-17.6 36-6.3 18.7-7.7 26.6-7.7 44.4 0 17.3.6 20.3 7.7 39.2 7.6 20.3 20.9 39.8 41.2 60.1 4.3 4.2 8.1 7.7 8.6 7.7s2.2 1.2 3.7 2.7c10.1 9.6 23.8 18.6 42.5 28 14.8 7.4 35.3 13.4 52.3 15.4 18.1 2.1 35.3-.2 49-6.6 13-6.1 26.3-20.7 35.1-38.5 4.2-8.5 9.8-25.1 12.1-36 2.7-12.8 2.5-40.7-.4-51.2-12.1-43.2-54.7-84.3-108.8-105.1-29-11.1-62.9-11.2-84.9-.2-3.8 1.9-7.1 3.3-7.3 3.1-.2-.2 2.6-3.1 6.3-6.5 12.4-11.3 27.8-16.7 38.6-13.4 2.9.9 10 1.8 15.7 2 10.4.4 10.4.4 9.8-3.3-1-6.2-4.8-10.7-12.5-14.7-8-4.2-15.5-5.6-25.2-4.6zm27.5 50.3c26.1 4.6 44.4 12.3 68.5 28.7 11.9 8.1 32.2 28.3 39.2 38.9 11.7 17.9 15.7 28.9 16.5 45.6 1 20.8-3.8 41.4-13.9 60.2-6.8 12.6-13 19.6-22.3 25.1-7.1 4.3-13.4 6-25.5 6.7-9 .6-28.1-1.4-29.8-3.1-1.3-1.2 2.1-2.2 9.6-2.8 8.6-.6 22.2-3.7 29.5-6.8 17.8-7.4 31.4-23.5 35.2-41.4 2.8-13.6 1.1-32-4.6-48.3-3.5-10-13.9-30.3-15.1-29.6-.4.3-.5-.1-.3-.8.6-1.6-10.2-15-17.3-21.7-5.3-4.9-21-12.8-31.2-15.7-9.1-2.6-35.6-2.7-45-.2-10.3 2.8-26.3 11.1-30.3 15.8-9.3 10.9-13.1 22.9-13 41.5 0 15.5 2.8 27.7 9.4 41.5 5.3 11.2 10.5 17.7 19.2 24.4 14.7 11.1 28.2 15.6 47.1 15.6 14.3 0 19.3-1.3 25.6-6.8 5.7-4.8 9.6-11.1 12.2-19.7 2.9-9.3 3.1-27.7.4-38-2.2-8.2-6.6-19.9-7.8-20.3-.4-.2-.8-1-.8-1.7 0-1.5-6.1-10.7-9.9-14.9-1.4-1.6-5.4-4.1-8.8-5.7-12.9-6-30.3-5.2-41.1 1.8-11.1 7.2-13.4 27.1-5 43.8 3 5.8 11.4 18.1 15.3 22.4 1.8 2 4.2 4.7 5.3 6.1 2.1 2.5 2.1 2.5 5.6-.9 1.9-1.9 3.3-3.8 3-4.3-.3-.5-.1-.7.4-.6.5.2 2.4-1 4.1-2.5 3.2-2.8 3.2-2.8-3.1-9.7-10.9-12-15.7-21.4-15.8-31.2 0-5.4.2-5.8 3-7.3 4-2.1 15.2-2 19.7.2 4.9 2.3 11.7 11.3 14.2 18.9 4.6 14.1 5.1 34.5.9 43.2-2.5 5.4-4 6.1-13.5 6.8-9.8.8-22.4-1.5-31.3-5.7-14.4-6.7-26.4-25.6-28.6-45-.4-3.3-1-6.1-1.4-6.4-1-.6.8-15.2 2.6-20.7 3.2-9.9 10.6-16.3 23.9-20.4 4.7-1.5 9.1-1.8 21-1.8 13.8 0 15.7.2 23 2.8 9.8 3.4 13.6 5.6 19.9 11.5 11.3 10.8 22.2 29.3 26.1 44.6 4.1 16.1 4.5 31.9.9 42-3.4 9.5-14.7 18.1-30.4 23-3.5 1.1-10.5 1.9-19.5 2.2-16.2.6-27.3-.9-42.5-5.8-16.6-5.4-24.6-10-36.7-21.3-6.9-6.5-8.9-9.2-13.4-17.9-6.9-13.3-10.3-21.9-13.4-34.2-6.7-26.4-5.3-54 3.7-72.2 4.7-9.6 13.5-18.6 22.1-22.7 4-1.8 9.7-3.9 12.7-4.5 3-.6 6.4-1.3 7.5-1.5 4.7-.9 16.6-.5 24 .8z"/>
+</svg>
 
 We are thrilled to introduce Degrowth Caucus.  Our caucus is based on the idea that the Left should integrate degrowth into its politics for several important reasons, including to hit the climate targets socialists have embraced as vital political goals. <!--more--> We have formed at a critical juncture in human history. The decade of the [:Green New Deal](https://en.wikipedia.org/wiki/Green_New_Deal) is upon us, characterized by a rapidly closing window for sufficient climate action, a resurgent Left in the U.S. and a growing eco-fascist movement globally. We believe that being vocal and explicit about the need for degrowth can help rather than hurt the socialist movement, as well as help birth the new culture we need to manage without growth. However, we realize that the dialogue between degrowth and ecosocialism is a work in progress. 
 
@@ -72,8 +75,23 @@ Our caucus is thus dedicated to the following purposes.
 
 # Points of Unity
 
+## 1. [Degrowth is necessary to stop and reverse the planetary ecological crises that capitalism and its intrinsic dependency on endless growth have caused.](#x-1-degrowth-is-necessary-to-stop-and-reverse-the-planetary-ecological-crises-that-capitalism-and-its-intrinsic-dependency-on-endless-growth-have-caused)
 
-### : 1. Degrowth is necessary to stop and reverse the planetary ecological crises that capitalism and its intrinsic dependency on endless growth have caused.
+## 2. [We affirm the need for a radical Green New Deal—without growth. ](#x-2-we-affirm-the-need-for-a-radical-green-new-dealwithout-growth)
+
+## 3. [Degrowth is necessary in the Global North for humanity to maximize our chances of limiting the worst effects of the climate crisis.](#x-3-degrowth-is-necessary-in-the-global-north-for-humanity-to-maximize-our-chances-of-limiting-the-worst-effects-of-the-climate-crisis)
+
+## 4. [Degrowth is necessary to realize global justice for all human beings and communities.](#x-4-degrowth-is-necessary-to-realize-global-justice-for-all-human-beings-and-communities)
+
+## 5. [Degrowth is ecofeminist, centering the safe reproduction of life on Earth in perpetuity.](#x-5-degrowth-is-ecofeminist-centering-the-safe-reproduction-of-life-on-earth-in-perpetuity)
+
+## 6. [We recognize the roles of different forms of technology in a degrowth transition.](#x-6-we-recognize-the-roles-of-different-forms-of-technology-in-a-degrowth-transition)
+
+## 7. [We acknowledge that—concomitant with the Left’s immediate task of building a multiracial, mass, working class movement to transform capitalism—the Left must help birth a new, post-carbon cultural hegemony as soon as possible.](#x-7-we-acknowledge-thatconcomitant-with-the-lefts-immediate-task-of-building-a-multiracial-mass-working-class-movement-to-transform-capitalismthe-left-must-help-birth-a-new-post-carbon-cultural-hegemony-as-soon-as-possible)
+
+## 8. [A synthesis of ecosocialism and degrowth is necessary to create a just and sustainable world.](#x-8-a-synthesis-of-ecosocialism-and-degrowth-is-necessary-to-create-a-just-and-sustainable-world)
+
+### :x 1. Degrowth is necessary to stop and reverse the planetary ecological crises that capitalism and its intrinsic dependency on endless growth have caused.
 
 1. Capitalism is a political and economic world-system that derives value from the exploitation of labor and natural resources. Its dynamic of exploitation (the profit motive) drives the endless accumulation, or growth, of capital wealth by externalizing its social and ecological costs. In turn, these costs have endlessly accumulated, resulting in a planetary crisis, of which climate change is a part. 
 
@@ -84,7 +102,7 @@ Our caucus is thus dedicated to the following purposes.
 4. Taking ecological pressure off humanity’s life-support ecosystems is a central goal of degrowth.
 
 
-## : 2. We affirm the need for a radical Green New Deal—without growth. 
+## :x 2. We affirm the need for a radical Green New Deal—without growth. 
 
 1.  We endorse DSA’s Green New Deal Principles and seek to expand upon them with our work, as they omit points that are critical to addressing the climate and broader ecological crisis. Transitioning to 100% renewable energy sources and shoring up infrastructure for climate resilience and sustainability will require massive public investments of financial and material resources. However, we can reduce the material intensity of the global energy transition as much as possible through energy demand reduction and prioritizing electrified mass transit instead of private automobiles, among other tactics.
 
@@ -101,7 +119,7 @@ Our caucus is thus dedicated to the following purposes.
 7. We support ecosocialist dépense, the democratic expenditure of society’s productive surplus. Dépense answers the problem of what to do with overproduction under ecosocialist degrowth. Another useful aspect of dépense is that it shows how scarcity logic under capitalism is historically specific, not a universal truth (Schmelzer et al. 2022, 127).
 
 
-## : 3. Degrowth is necessary in the Global North for humanity to maximize our chances of limiting the worst effects of the climate crisis.
+## :x 3. Degrowth is necessary in the Global North for humanity to maximize our chances of limiting the worst effects of the climate crisis.
 
 
 1.  The scientific literature overwhelmingly fails to provide evidence for absolute decoupling of material use, greenhouse gas emissions, and energy use from economic growth. Therefore, we are aligned with the best available science in rejecting arguments that so-called “green growth” is a viable way to avert climate catastrophe. 
@@ -113,7 +131,7 @@ Our caucus is thus dedicated to the following purposes.
 4. As degrowth ecosocialists, we center the crucial understanding that shifting economies in the Global North to run on much lower levels of energy and resource use makes it easier for humanity to decarbonize our energy systems and meet climate targets in the short time we have left. 
 
 
-## : 4. Degrowth is necessary to realize global justice for all human beings and communities.
+## :x 4. Degrowth is necessary to realize global justice for all human beings and communities.
 
 1.  As internationalists, we stand firmly against imperialism, racial capitalism, and for decolonizing the global economy. Full decolonization requires a thorough application of equity. **Contraction and convergence**—where the Global North’s energy and material use contracts so that societies in the Global South can increase their energy and material use—is necessary to achieve a globally fair material foundation for human flourishing within biophysical boundaries.
 
@@ -130,7 +148,7 @@ Our caucus is thus dedicated to the following purposes.
 7.  Two concepts we lift up from the scientific literature are decent living energy (DLE) and decent living standards (DLS) (Figure 1) ([Millward-Hopkins, 2020](https://www.sciencedirect.com/science/article/pii/S0959378020307512); [Rao and Min, 2017](https://link.springer.com/article/10.1007/s11205-017-1650-0)). DLE describes the minimum amount of energy needed to live well, while DLS traces the material requisites of a good life. Aspects of DLS include access to durable, modern, affordable, energy efficient and climate resilient housing; ready access to day-to-day technologies that improve well-being, including refrigeration, washing machines, and multi-modal transportation, especially electrified public transit, among other things. As Millward-Hopkins et al. (2020) elaborate, “sufficiency is far more materially generous than many” degrowth opponents assume.
 
 
-## : 5. **Degrowth is ecofeminist, centering the safe reproduction of life on Earth in perpetuity.**
+## :x 5. Degrowth is ecofeminist, centering the safe reproduction of life on Earth in perpetuity.
 
 1.  For capitalism, reproductive labor is valued only insofar as it is exploitable in market exchange. Socialist feminism highlights that reproductive labor is never valuable in itself for capitalism. We believe that many forms of labor are intrinsically valuable and ought to be socially recognizable as such. 
 
@@ -139,7 +157,7 @@ Our caucus is thus dedicated to the following purposes.
 3.  Degrowth valorizes care as socially necessary labor but also recognizes the extent to which care work has historically been a definitive expectation of women. Thus, whereas care work must be expanded within a regenerative political economy, it must be ungendered and equitably distributed as well.
 
 
-## : 6. We recognize the roles of different forms of technology in a degrowth transition.
+## :x 6. We recognize the roles of different forms of technology in a degrowth transition.
 
 
 1. There can be no question whether modern technologies will be deployed in service of a degrowth transition. Instead, the question is which ones and at what scales. While one and the same technology can be used for various ends, different technologies are nevertheless conditioned by, and condition further, different historical trajectories—a fact that socialists cannot stand to ignore. The status quo whereby tech capitalists innovate first and let society deal with the consequences second has produced a particular image of modern technology that is both unsustainable and oppressive to the working class. One timely example of this is greenwashing by corporations and captured governments promoting false solutions in the form of growth-enabling technologies, including forms of carbon capture and storage (CCS) such as direct air capture (DACCS) and bioenergy carbon capture and storage (BECCS) ([CIEL, 2021](https://www.ciel.org/organizations-demand-policymakers-reject-carbon-capture-and-storage/)). Thus, we call for democratic control over technological research, development, manufacturing, and rollout.
@@ -152,7 +170,7 @@ Our caucus is thus dedicated to the following purposes.
 
 5. We recognize the critical role of technology in empowering Global Southern countries to meet their needs, and call for extensive technology transfers and releasing of intellectual property.
  
-## : 7. We acknowledge that—concomitant with the Left’s immediate task of building a multiracial, mass, working class movement to transform capitalism—the Left must help birth a new, post-carbon cultural hegemony as soon as possible.
+## :x 7. We acknowledge that—concomitant with the Left’s immediate task of building a multiracial, mass, working class movement to transform capitalism—the Left must help birth a new, post-carbon cultural hegemony as soon as possible.
 
 1.  We must dare to imagine and agitate for the post-carbon, post-capitalist systems we want _now_, embarking on political education projects while implementing DSA’s theory of change to build a mass movement for a radical Green New Deal (Aronoff et al. 2019, Ajl 2021, DSA Ecosocialist Working Group 2019). 
 
@@ -164,7 +182,7 @@ Our caucus is thus dedicated to the following purposes.
 
 5.  Degrowth is utopian precisely because the crises we face are so overwhelming that they demand a utopian response, a clarion call for a better world.
 
-## : 8. A synthesis of ecosocialism and degrowth is necessary to create a just and sustainable world.
+## :x 8. A synthesis of ecosocialism and degrowth is necessary to create a just and sustainable world.
 
 1.   Any future political economic system, including an ecosocialist[^6] one, cannot bring human activities to within sustainable planetary boundaries in perpetuity unless it purges endless economic growth as an economic policy goal and achieves physical equilibrium with its life-support ecosystems (LSEs). Degrowth combines an empirically sound body of theory with a policy program for a sustainable future ecosocialist economy that is not reliant on the growth imperative. However, degrowth lacks a robust theory of class struggle and socio-political change. Therefore, securing a livable planet for the future generations necessitates integrating degrowth and ecosocialism. In short, each without the other is sure to fail.
 
@@ -181,6 +199,7 @@ Our caucus is thus dedicated to the following purposes.
 In sum, degrowth uniquely makes possible an ecologically coherent and socially just ecosocialist economy. Such an economy would: be oriented around use values instead of exchange values; be based on democratic ecological planning; organize production through worker and community ownership and management; regulate consumption to prioritize and equalize sufficiency emissions; democratically allocate surplus; and protect and expand access to all types of commons. It would also be smaller in its total energy and material consumption than the current capitalist economy. Crucially, to the degree that ecomodernist ideologies and narratives of so-called “green growth” ignore or run counter to the necessary reduction of economic throughput in accordance with planetary boundaries, they must be rejected as incompatible with the degrowth ecosocialist project we seek to further. 
 
 ![image](/assets/SVGs/rose_planet.svg)
+
 <br>
 
 ---
