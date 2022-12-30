@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="css/main.css">
-{% include head.html %}
-</head>
-<body>
-  <div class="container">
-    {{ content }}
-  </div>
-{% include scripts.html %}
-</body>
+<html lang="{{ site.lang }}">
+
+  <!-- Head -->
+  <head>
+  {%- if page.redirect -%}
+    <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
+  {%- endif -%}
+  {% include head.html %}
+  </head>
+
+  <!-- Body -->
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+
+    <!-- Header -->
+    {%- include header.html %}
+
+    <!-- Content -->
+    <div class="container mt-5">
+      {{ content }}
+    </div>
+
+    <!-- Footer -->
+    {%- include footer.html %}
+
+    <!-- JavaScripts -->
+    {% include scripts/jquery.html %}
+    {% include scripts/bootstrap.html %}
+    {% include scripts/masonry.html %}
+    {% include scripts/misc.html %}
+    {% include scripts/mathjax.html %}
+    {% include scripts/analytics.html %}
+    {% include scripts/progressBar.html %}
+  </body>
 </html>
