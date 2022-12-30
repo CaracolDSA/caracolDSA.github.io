@@ -11,7 +11,7 @@
 v1.0.4 - "On the 23rd Day of Christmas"
 
 ( NOTE TO SELF: When updating version, remember to edit... )
-( this js file's "Nutshell.version", include_nutshell.js     )
+( this js file's ".version", include_.js     )
 ( ACTUALLY MAKE A RELEASE ON GITHUB                        )
 
 You know how in Memento, the amnesia guy tattoos reminders on his body?
@@ -32,7 +32,7 @@ That's why this file even contains the CSS & others' minified libraries
 (This library doesn't even have any dependencies! <3)
 
 Decentralized:
-Nutshell Sections can be re-used across websites & authors!
+ Sections can be re-used across websites & authors!
 
 Backwards Compatible:
 Should work with blogs & writings that *already* exist.
@@ -48,19 +48,19 @@ thx
 === TERMINOLOGY ===
 ===================
 
-Nutshell: name of this library
+: name of this library
 
-Nutshell Section: a piece of text/html that can be embedded elsewhere.
-  (sometimes just called "Section", or, confusingly, "Nutshell".)
+ Section: a piece of text/html that can be embedded elsewhere.
+  (sometimes just called "Section", or, confusingly, "".)
 
 Expandable: a button you can click to get an "expandable explanation"
   (also called just "Button" or "link". Look, I'm not consistent.)
 
-Bubble: the box that expands below an expandable, containing a Nutshell Section
+Bubble: the box that expands below an expandable, containing a  Section
 
 
 ========================================
-=== WHAT NUTSHELL NEEDS TO DO (SPEC) ===
+=== WHAT  NEEDS TO DO (SPEC) ===
 ========================================
 
 1) Convert the top page (or a given element):
@@ -84,12 +84,12 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         &before=[markdown]&after=[markdown] – add html like pre-req's, commentary.
 
   b. Give <h*> headings two reveal-on-hover buttons:
-    one for permalink, one to embed that Nutshell
+    one for permalink, one to embed that 
 
-  c. A modal dialogue to let readers embed Nutshells
+  c. A modal dialogue to let readers embed s
 
   [NEW]
-  d. A "close all Nutshells" button when more than one Expandable is open.
+  d. A "close all s" button when more than one Expandable is open.
 
   By default, do all this on DOMContentLoaded (no need for images loaded first)
 
@@ -112,7 +112,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
     Get the Section's HTML from "#Heading", &before, &after, &start, &end, etc
     Do very forgiving search: case-insensitive, don't care about punctuation.
-    Convert :links inside it to Nutshell Expandables, too (yay, recursion!)
+    Convert :links inside it to  Expandables, too (yay, recursion!)
 
   c. Put Section element below "expandable" (after punctuation) in a Bubble:
     - bubble head: link to source (if remote), embed button
@@ -123,33 +123,33 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 {
 
     // it me
-    window.Nutshell = {};
+    window. = {};
 
     // Version! & CDN
-    Nutshell.version = 'v1.0.4';
-    //Nutshell.cdn = `https://cdn.jsdelivr.net/gh/ncase/nutshell@${Nutshell.version}/nutshell.js`;
-    Nutshell.cdn = `https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js`;
+    .version = 'v1.0.4';
+    //.cdn = `https://cdn.jsdelivr.net/gh/ncase/@${.version}/.js`;
+    .cdn = `https://cdn.jsdelivr.net/gh/ncase//.js`;
 
     // What's THIS page's URL? (WITH QUERYSTRING)
-    Nutshell.thisPageURL = location.protocol + '//' + location.host + location.pathname + location.search;
+    .thisPageURL = location.protocol + '//' + location.host + location.pathname + location.search;
 
 
     /////////////////////////////////////////////////////////////////////
-    // ⭐️ Start Nutshell!
+    // ⭐️ Start !
     /////////////////////////////////////////////////////////////////////
 
-    // By default, start Nutshell on DOMContentLoaded
+    // By default, start  on DOMContentLoaded
     // (you may want to delay this e.g. if your blog's content is AJAX'd in)
     window.addEventListener('DOMContentLoaded', ()=>{
-        if(Nutshell.options.startOnLoad) Nutshell.start();
+        if(.options.startOnLoad) .start();
     });
 
-    // NUTSHELL START
-    Nutshell.start = (el=document.body)=>{
+    //  START
+    .start = (el=document.body)=>{
 
         // Restart!
-        Nutshell.htmlCache = {};
-        Nutshell._nutshellsOpen = 0;
+        .htmlCache = {};
+        ._sOpen = 0;
 
         // IF TOP PAGE: Convert this page!
         // (By default, the whole document. But you can specify element,
@@ -159,18 +159,18 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         if(window == window.top){
 
             // Add self's HTML to my own cached
-            Nutshell.htmlCache[Nutshell.thisPageURL] = _purifyHTML(el.innerHTML, Nutshell.thisPageURL);
+            .htmlCache[.thisPageURL] = _purifyHTML(el.innerHTML, .thisPageURL);
 
             // Add styles & convert page
-            Nutshell.addStyles();
-            Nutshell.hideHeadings(el);
-            Nutshell.convertLinksToExpandables(el);
-            Nutshell.convertHeadings(el);
+            .addStyles();
+            .hideHeadings(el);
+            .convertLinksToExpandables(el);
+            .convertHeadings(el);
 
             // Fill out other UI with localized text
-            // (only set by user after Nutshell.js file included, hence this)
-            Nutshell.fillCloseAllText();
-            Nutshell.fillEmbedModalText();
+            // (only set by user after .js file included, hence this)
+            .fillCloseAllText();
+            .fillEmbedModalText();
 
         }else{
 
@@ -188,15 +188,15 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     const LOAD_WAIT_TIME = 6999; // 7 seconds
     const HEADER_TAGS = ['h1','h2','h3','h4','h5','h6'];
 
-    Nutshell.options = {
-        startOnLoad: true, // Start Nutshell on load? (default: true)
+    .options = {
+        startOnLoad: true, // Start  on load? (default: true)
         lang: 'en' // Language (default: 'en', which is English)
     };
 
     // A semantic sugar function to override options
-    Nutshell.setOptions = (newOptions)=>{
+    .setOptions = (newOptions)=>{
         Object.keys(newOptions).forEach((key)=>{
-            Nutshell.options[key] = newOptions[key];
+            .options[key] = newOptions[key];
         });
     };
 
@@ -204,17 +204,17 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     // Localizeable text
     /////////////////////
 
-    Nutshell.language = {
+    .language = {
         en: {
 
             // Button text
-            closeAllNutshells: `close all nutshells`,
-            learnMore: `learn more about Nutshell`,
+            closeAlls: `close all s`,
+            learnMore: `learn more about `,
 
-            // Nutshell errors...
+            //  errors...
             notFoundError: `Uh oh, the page was not found! Double check the link:`,
             wikiError: `Uh oh, Wikipedia's not loading, or the link is broken. Please double check:`,
-            corsError: `Uh oh, the page was found but didn't hand over its content! Check that the other site has Nutshell installed or CORS enabled:`,
+            corsError: `Uh oh, the page was found but didn't hand over its content! Check that the other site has  installed or CORS enabled:`,
             sectionIDError: `Uh oh, there's no section that matches the ID #[ID]! Watch out for typos & regional spelling differences.`,
             startTextError: `Uh oh, there's no paragraph that has the text “[start]”! Watch out for typos.`,
 
@@ -225,7 +225,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             embedStep2: `Step 2) In your article, create a link to [LINK]
                          and make sure the link text starts with a :colon,
                          <a href="#">:like this</a>,
-                         so Nutshell knows to make it expandable.`,
+                         so  knows to make it expandable.`,
             embedStep3: `Step 3) That's all, folks! 🎉`,
 
             // What punctuation (in this language) should we KEEP after an expandable opens?
@@ -236,13 +236,13 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         },
         eo: {
             // Button text
-            closeAllNutshells: `fermu ĉiujn nuksŝeloj`,
+            closeAlls: `fermu ĉiujn nuksŝeloj`,
             learnMore: `lernu pli`,
 
-            // Nutshell errors...
+            //  errors...
             notFoundError: `Ho ne, la paĝo ne estis trovita! Kontroli denove la ligilo:`,
             wikiError: `Ho ne, Vikipedio ne ŝargiĝas, aŭ la ligilo estas rompita. Bonvolu kontroli denove:`,
-            corsError: `Ho ne, la paĝo estis trovita sed ne transdonis ĝian enhavon! Kontrolu, ke la alia retejo havas Nutshell instalita aŭ CORS ebligita:`,
+            corsError: `Ho ne, la paĝo estis trovita sed ne transdonis ĝian enhavon! Kontrolu, ke la alia retejo havas  instalita aŭ CORS ebligita:`,
             sectionIDError: `Ho ne, ne ekzistas sekcio kiu kongruas kun la ID #[ID]! Atentu tajperarojn kaj regionajn literumajn diferencojn.`,
             startTextError: `Ho ne, ne estas paragrafo kiu havas la tekston “[start]”! Atentu tajperarojn.`,
 
@@ -264,13 +264,13 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         fr: {
 
             // Button text
-            closeAllNutshells: `fermer toutes les Nutshells`,
+            closeAlls: `fermer toutes les s`,
             learnMore: `en savoir plus`,
 
-            // Nutshell errors...
+            //  errors...
             notFoundError: `Oh oh, la page n'as pas été trouvée! Lien à vérifier:`,
             wikiError: `Oh oh, Wikipédia n'envoie rien, ou le lien est cassé. S'il vous plaît, vérifiez:`,
-            corsError: `Oh oh, la page a été trouvée mais refuse de nous donner son contenu! Vérifiez que l'autre site a Nutshell d'installé ou CORS d'activé:`,
+            corsError: `Oh oh, la page a été trouvée mais refuse de nous donner son contenu! Vérifiez que l'autre site a  d'installé ou CORS d'activé:`,
             sectionIDError: `Oh oh, il n'existe pas de section avec l'identifiant #[ID]! Ça pourrait venir d'une faute de frappe ou d'une orthographe d'origine différente.`,
             startTextError: `Oh oh, il n'existe pas de paragraphe contenant “[start]”! Ça pourrait venir d'une faute de frappe.`,
 
@@ -281,7 +281,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             embedStep2: `Étape 2) Dans votre article, créez un lien vers [LINK]
                          et assurez vous que le texte du lien démarre avec :deux-points,
                          <a href="#">:comme ça</a>,
-                         pour que Nutshell sache que c'est expansible.`,
+                         pour que  sache que c'est expansible.`,
             embedStep3: `Step 3) Et voila! 🎉`,
 
             // What punctuation (in this language) should we KEEP after an expandable opens?
@@ -293,13 +293,13 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         nl: {
 
             // Button text
-            closeAllNutshells: `sluit alle Nutshells`,
+            closeAlls: `sluit alle s`,
             learnMore: `leer meer`,
 
-            // Nutshell errors...
+            //  errors...
             notFoundError: `Uh oh, deze pagina kon niet worden gevonden! Controleer de link nogmaals:`,
             wikiError: `Uh oh, Wikipedia kan niet worden geladen, of de link doet het niet. Controleer nogmaals:`,
-            corsError: `Uh oh, de pagina was gevoden, maar wilde zijn content niet doorgeven! Controleer of de andere site Nutshell heeft geïnstalleerd of CORS heeft geactiveerd.`,
+            corsError: `Uh oh, de pagina was gevoden, maar wilde zijn content niet doorgeven! Controleer of de andere site  heeft geïnstalleerd of CORS heeft geactiveerd.`,
             sectionIDError: `Uh oh, er is geen sectie die overeenkomt met ID #[ID]! Let op tikfouten en alternatieve spellingen.`,
             startTextError: `Uh oh, er is geen sectie met de tekst “[start]”! Pas op voor tikfouten.`,
 
@@ -310,7 +310,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             embedStep2: `Stap 2) In je artikel, maak een link naar [LINK]
                          en zorg ervoor dat de link start met een :dubbelepunt,
                          <a href="#">:zoals dit</a>,
-                         zodat Nutshell weet dat deze link moet uitklappen.`,
+                         zodat  weet dat deze link moet uitklappen.`,
             embedStep3: `Step 3) Dat is alles! 🎉`,
 
             // What punctuation (in this language) should we KEEP after an expandable opens?
@@ -322,13 +322,13 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         de: {
 
             // Button text
-            closeAllNutshells: `alle Nutshells schließen`,
+            closeAlls: `alle s schließen`,
             learnMore: `lern mehr`,
 
-            // Nutshell errors...
+            //  errors...
             notFoundError: `Ups, die Seite konnte nicht gefunden werden! Prüfe den Link nochmals:`,
             wikiError: `Ups, Wikipedia konnt nicht geladen werden, oder der Link ist kaputt. Bitte prüfen:`,
-            corsError: `Ups, die Seite wurde gefunden, hat ihren Inhalt jedoch nicht übergeben! Stelle sicher, dass bei der anderen Site Nutshell installiert oder CORS aktiviert ist:`,
+            corsError: `Ups, die Seite wurde gefunden, hat ihren Inhalt jedoch nicht übergeben! Stelle sicher, dass bei der anderen Site  installiert oder CORS aktiviert ist:`,
             sectionIDError: `Ups, es gibt keine Sektion passend zur ID #[ID]! Prüfe auf Schreibfehler & regionsabhängige Unterschiede der Schreibweise.`,
             startTextError: `Ups, es gibt keinen Absatz mit dem Text “[start]”! Prüfe auf Schreibfehler.`,
 
@@ -339,7 +339,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             embedStep2: `Schritt 2) Erzeuge einen Link zu [LINK] in deinem Artikel
                          und stelle dabei sicher, dass der Linktext mit einem :Doppelpunkt beginnt,
                          <a href="#">:also so</a>,
-                         sodass Nutshell weiß, dass er ausklappbar sein soll.`,
+                         sodass  weiß, dass er ausklappbar sein soll.`,
             embedStep3: `Step 3) Das wars! 🎉`,
 
             // What punctuation (in this language) should we KEEP after an expandable opens?
@@ -351,13 +351,13 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         pl: {
 
             // Button text
-            closeAllNutshells: `zamknij wszystkie nutshelle`,
+            closeAlls: `zamknij wszystkie e`,
             learnMore: `Ucz się więcej`,
 
-            // Nutshell errors...
+            //  errors...
             notFoundError: `Ups, nie znaleziono strony! Sprawdź link ponownie:`,
             wikiError: `Ups, Wikipedia się nie ładuje lub link nie działa. Sprawdź ponownie:`,
-            corsError: `Ups, stronę znaleziono, ale nie przekazała ona swojej treści! Sprawdź, czy tamta witryna ma zainstalowany Nutshell lub włączone CORS:`,
+            corsError: `Ups, stronę znaleziono, ale nie przekazała ona swojej treści! Sprawdź, czy tamta witryna ma zainstalowany  lub włączone CORS:`,
             sectionIDError: `Ups, żadna sekcja nie pasuje do identyfikatora #[ID]! Zwróć uwagę na literówki i lokalne różnice w pisowni.`,
             startTextError: `Ups, żaden akapit nie zawiera tekstu “[start]”! Zwróć uwagę na literówki.`,
 
@@ -368,7 +368,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             embedStep2: `Krok 2) Stwórz w swoim artykule link do [LINK]
                          i upewnij się, że tekst linku rozpoczyna się :dwukropkiem,
                          <a href="#">:w ten sposób</a>,
-                         żeby Nutshell wiedział, aby umożliwić jego rozszerzanie.`,
+                         żeby  wiedział, aby umożliwić jego rozszerzanie.`,
             embedStep3: `Krok 3) To by było na tyle! 🎉`,
 
             // What punctuation (in this language) should we KEEP after an expandable opens?
@@ -380,13 +380,13 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 		es: {
 
             // Button text
-            closeAllNutshells: `cerrar todos los nutshells`,
+            closeAlls: `cerrar todos los s`,
             learnMore: `aprende más`,
 
-            // Nutshell errors...
+            //  errors...
             notFoundError: `¡Ups, no se encontró la página! Verifica el link:`,
             wikiError: `Ups, Wikipedia no está cargando, o el link está roto. Verifica:`,
-            corsError: `¡Ups, la página se encontró pero esta no entregó su contenido! Verifica que la otra página tenga Nutshell instalado o CORS habilitado:`,
+            corsError: `¡Ups, la página se encontró pero esta no entregó su contenido! Verifica que la otra página tenga  instalado o CORS habilitado:`,
             sectionIDError: `¡Ups, no se ha encontrado la sección con la ID #[ID]! Verifica que no haya errores de tipeo o diferencias regionales de escritura.`,
             startTextError: `¡Ups, no hay ningún párrafo con el texto “[start]”! Verifica que no haya errores de tipeo.`,
 
@@ -397,7 +397,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             embedStep2: `Paso 2) En tu artículo, añade un link a [LINK]
                          y asegúrate de que el texto del link comience con :dos puntos,
                          <a href="#">:así</a>,
-                         para que Nutshell sepa cómo expandirlo.`,
+                         para que  sepa cómo expandirlo.`,
             embedStep3: `Paso 3) ¡Eso es todo, amigos! 🎉`,
 
             // What punctuation (in this language) should we KEEP after an expandable opens?
@@ -409,13 +409,13 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         zh: {
 
             // Button text
-            closeAllNutshells: `合上所有的nutshells`,
+            closeAlls: `合上所有的s`,
             learnMore: `学到更多`,
 
-            // Nutshell errors...
+            //  errors...
             notFoundError: `啊 噢, 没有找到网页！请再次检查链接:`,
             wikiError: `啊 噢, 载入维基百科失败，或者说这个链接是失效了，请再次检查:`,
-            corsError: `啊 噢, 网页找到了，但是它并没有交出它的内容！请检查其他站点是否已经安装了Nutshell或者允许跨域资源共享:`,
+            corsError: `啊 噢, 网页找到了，但是它并没有交出它的内容！请检查其他站点是否已经安装了或者允许跨域资源共享:`,
             sectionIDError: `啊 噢, 并没有段落能匹配这个ID #[ID]! 注意拼写错误 & 地区拼写差异。`,
             startTextError: `啊 噢, 并不存在包含“[start]”文本的段落！请检查拼写错误。`,
 
@@ -426,7 +426,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             embedStep2: `第二步)在你的文章中，创建一个链接链接至[LINK]
                          并确保链接中的文本以:冒号开头,
                          <a href="#">:就像这样</a>,
-                         这样，Nutshell就知道要使其可展开。`,
+                         这样，就知道要使其可展开。`,
             embedStep3: `第三步)就这么多，家人们! 🎉`,
 
 
@@ -438,13 +438,13 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         },
         he: {
             // Button text
-            closeAllNutshells: `סגור את כל האגוזים`,
+            closeAlls: `סגור את כל האגוזים`,
             learnMore: `עוד אודות קליפת האגוז`,
 
-            // Nutshell errors...
+            //  errors...
             notFoundError: `:אוי לא, הדף לא נמצא! בדקו שוב את הקישור`,
             wikiError: `:אוי לא, ויקיפדיה לא טוען, או שהלינק לא תקין. בבקשה בדקו שוב`,
-            corsError: `:מופעל CORS מותקן או nutshell אוי לא, העמוד נמצא אך לא איפשר גישה לתוכן! בדקו אם לאתר יש `,
+            corsError: `:מופעל CORS מותקן או  אוי לא, העמוד נמצא אך לא איפשר גישה לתוכן! בדקו אם לאתר יש `,
             sectionIDError: `.בדקו שגיאות כתיב והבדלי איות אזוריים ! #[ID] IDאוי לא, אין סעיף אשר תואם את ה`,
             startTextError: `.הזהרו משגיאות כתיב !“[start]” אוי לא, אין פסקה עם הטקסט`,
 
@@ -455,7 +455,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             embedStep2: `[LINK]צעד 2) במאמר שלכם, תיצרו קישור ל
                          ודאגו שהטקסט של הלינק מתחיל עם :נקודותיים,
                          <a href="#">:ככה</a>
-                         .ידע לעשות אותו ניתן להרחבה Nutshellכך ש`,
+                         .ידע לעשות אותו ניתן להרחבה כך ש`,
             embedStep3: `🎉 !צעד 3) זה הכל, חברים`,
 
             // What punctuation (in this language) should we KEEP after an expandable opens?
@@ -466,13 +466,13 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         tr: {
 
             // Button text
-            closeAllNutshells: `tüm Nutshell'leri kapat`,
-            learnMore: `Nutshell hakkında daha fazla şey öğren`,
+            closeAlls: `tüm 'leri kapat`,
+            learnMore: ` hakkında daha fazla şey öğren`,
 
-            // Nutshell errors...
+            //  errors...
             notFoundError: `Ah, sayfa bulunamadı! Linki tekrar kontrol edin:`,
             wikiError: `Ah, Wikipedia yüklenmiyor veya link bozuk. Lütfen tekrar kontrol edin:`,
-            corsError: `Ah, sayfa bulundu ama içeriği görüntüleyemiyoruz! Diğer sitede de Nutshell'in kurulu veya CORS'un etkin olduğundan emin olunuz:`,
+            corsError: `Ah, sayfa bulundu ama içeriği görüntüleyemiyoruz! Diğer sitede de 'in kurulu veya CORS'un etkin olduğundan emin olunuz:`,
             sectionIDError: `Ah, #[ID] kimliğiyle eşleşen bir bölüm yok! Yazım hatalarına ve bölgesel yazım farklılıklarına dikkat edin.`,
             startTextError: `Ah, “[start]” metnine sahip bir paragraf yok! Yazım hatalarına dikkat edin.`,
 
@@ -483,7 +483,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             embedStep2: `Adım 2) İçeriğinizde [LINK] için bir bağlantı oluşturun
                          ve bağlantı metninin :iki nokta ile başladığından emin olun
                          <a href="#">:bu şekilde</a>,
-                         böylece Nutshell onu genişletmesi gerektiğini anlar.`,
+                         böylece  onu genişletmesi gerektiğini anlar.`,
             embedStep3: `Adım 3) İşte, hepsi bu kadar! 🎉`,
 
             // What punctuation (in this language) should we KEEP after an expandable opens?
@@ -494,9 +494,9 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         }
     };
 
-    Nutshell.getLocalizedText = (textID)=>{
-        let currentLanguage = Nutshell.options.lang,
-            dictionary = Nutshell.language[currentLanguage];
+    .getLocalizedText = (textID)=>{
+        let currentLanguage = .options.lang,
+            dictionary = .language[currentLanguage];
         return dictionary[textID];
     }
 
@@ -507,7 +507,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     // ⭐️ Convert links to Expandable buttons
     /////////////////////////////////////////////////////////////////////
 
-    Nutshell.convertLinksToExpandables = (dom, forThisElement)=>{
+    .convertLinksToExpandables = (dom, forThisElement)=>{
 
         // Get an array of all links, filtered by if the text starts with a :colon
         let expandables = [...dom.querySelectorAll('a')].filter(
@@ -518,17 +518,17 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         expandables.forEach((ex)=>{
 
             // Style: closed Expandable
-            ex.classList.add('nutshell-expandable');
+            ex.classList.add('-expandable');
             ex.setAttribute("mode", "closed");
 
             // Remove colon, replace with animated balls
             let linkText = document.createElement('span');
             linkText.innerHTML = ex.innerText.slice(ex.innerText.indexOf(':')+1);
-            linkText.className = 'nutshell-expandable-text';
+            linkText.className = '-expandable-text';
             let ballUp = document.createElement('span');
-            ballUp.className = 'nutshell-ball-up';
+            ballUp.className = '-ball-up';
             let ballDown = document.createElement('span');
-            ballDown.className = 'nutshell-ball-down';
+            ballDown.className = '-ball-down';
             ex.innerHTML = '';
             ex.appendChild(linkText);
             ex.appendChild(ballUp);
@@ -545,7 +545,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             if(ex.nextSibling && ex.nextSibling.nodeValue){
                 let nextChar;
                 // get next char, is it punctuation?
-                let keepPunctuation = Nutshell.getLocalizedText('keepPunctuation');
+                let keepPunctuation = .getLocalizedText('keepPunctuation');
                 while( keepPunctuation.indexOf(nextChar=ex.nextSibling.nodeValue[0]) >= 0 ){
                     ex.nextSibling.nodeValue = ex.nextSibling.nodeValue.slice(1); // slice off the rest
                     punctuation.innerHTML += nextChar; // slap it on
@@ -559,7 +559,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                                           && punctuation.nextSibling.nodeValue.trim().length>1;
             let followupSpan = document.createElement('span');
             followupSpan.style.display = 'none';
-            followupSpan.className = 'nutshell-followup';
+            followupSpan.className = '-followup';
             ex.parentNode.insertBefore(followupSpan, punctuation.nextSibling); // add right after punctuation
 
             // Short or long followup TEXT?
@@ -574,7 +574,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                     tmpSpan.innerHTML = htmlBeforeThisLink;
                 // Get immediately previous sentence
                 let textBeforeThinkLink = tmpSpan.innerText,
-                    sentencesBeforeThisLink = textBeforeThinkLink.split(Nutshell.getLocalizedText('endPunctuation')),
+                    sentencesBeforeThisLink = textBeforeThinkLink.split(.getLocalizedText('endPunctuation')),
                     lastSentenceHTML = sentencesBeforeThisLink[sentencesBeforeThisLink.length-1];
 
                 // Follow up with prev sentence, then expandable text in bold, then punctuation
@@ -605,14 +605,14 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                 // Insert a bubble
                 //debugger;
                 let clickX = mouseEvent.clientX - ex.parentNode.getBoundingClientRect().x; // relative to parent, I guess???
-                bubble = Nutshell.createBubble(ex, clickX);
+                bubble = .createBubble(ex, clickX);
                 ex.parentNode.insertBefore(bubble, punctuation.nextSibling); // place the bubble AFTER PUNCTUATION
                 ex.setAttribute("mode", "open");
                 ex.updateFollowupText();
 
                 // One more
-                Nutshell._nutshellsOpen++;
-                Nutshell._updateCloseAllNutshells();
+                ._sOpen++;
+                ._updateCloseAlls();
             };
             ex.close = ()=>{
 
@@ -626,8 +626,8 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                 setTimeout(ex.updateFollowupText, ANIM_TIME);
 
                 // One less
-                Nutshell._nutshellsOpen--;
-                Nutshell._updateCloseAllNutshells();
+                ._sOpen--;
+                ._updateCloseAlls();
 
             };
             // ON CLICK: toggle open/closed
@@ -643,18 +643,18 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     };
 
     /////////////////////////////////////////////////////////////////////
-    // ⭐️ CLOSE ALL NUTSHELLS
+    // ⭐️ CLOSE ALL S
     /////////////////////////////////////////////////////////////////////
 
     // Keep count
-    Nutshell._nutshellsOpen = 0;
+    ._sOpen = 0;
 
     // Close 'em all
-    Nutshell.closeAllNutshells = ()=>{
+    .closeAlls = ()=>{
 
         // Close only the top level ones...
-        let allExpandables = [...document.querySelectorAll('.nutshell-expandable')],
-            nestedExpandables = [...document.querySelectorAll('.nutshell-expandable .nutshell-expandable')];
+        let allExpandables = [...document.querySelectorAll('.-expandable')],
+            nestedExpandables = [...document.querySelectorAll('.-expandable .-expandable')];
             onlyOpenTops = allExpandables.filter( (ex)=>{
                 return ex.isOpen && !nestedExpandables.includes(ex);
             });
@@ -662,30 +662,30 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         // Close all open tops
         onlyOpenTops.forEach((ex)=>{ex.close()});
 
-        // And after some time, reset the "close all nutshells" count & button
+        // And after some time, reset the "close all s" count & button
         setTimeout(()=>{
-            Nutshell._nutshellsOpen = 0;
-            Nutshell._updateCloseAllNutshells();
+            ._sOpen = 0;
+            ._updateCloseAlls();
         },ANIM_TIME+100);
 
     };
 
     // MAKE UI: Floating in top right
-    Nutshell.closeAllButton = document.createElement('div');
-    let _ca = Nutshell.closeAllButton;
-    _ca.id = "nutshell-close-all";
+    .closeAllButton = document.createElement('div');
+    let _ca = .closeAllButton;
+    _ca.id = "-close-all";
     _ca.setAttribute('show', 'no');
-    _ca.onclick = Nutshell.closeAllNutshells;
+    _ca.onclick = .closeAlls;
 
-    // When Nutshell starts, populate with text localization
-    Nutshell.fillCloseAllText = ()=>{
-        _ca.innerText = Nutshell.getLocalizedText('closeAllNutshells');
+    // When  starts, populate with text localization
+    .fillCloseAllText = ()=>{
+        _ca.innerText = .getLocalizedText('closeAlls');
         document.body.appendChild(_ca);
     };
 
     // If 2 or more, show it, else hide it.
-    Nutshell._updateCloseAllNutshells = ()=>{
-        if(Nutshell._nutshellsOpen>=2){
+    ._updateCloseAlls = ()=>{
+        if(._sOpen>=2){
 
             // Show it if hidden
             if(_ca.getAttribute('show')=='no'){
@@ -715,19 +715,19 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
     // Not very picky about what's in the cache
     // Could be just <p>'s, or the entire <body> with nav & comments
-    Nutshell.htmlCache = {};
+    .htmlCache = {};
 
     // Promise PROCESSED html!
     // From a URL, try cache, remote, wikipedia...
     // Then DOMPurify it.
-    Nutshell.promisePurifiedHTMLFromURL = (url)=>{
+    .promisePurifiedHTMLFromURL = (url)=>{
 
         // A promise...
         return new Promise((resolvePurifiedHTML, rejectPurifiedHTML)=>{
 
             // If already in cache, return that.
-            if(Nutshell.htmlCache[url]){
-                resolvePurifiedHTML(Nutshell.htmlCache[url]);
+            if(.htmlCache[url]){
+                resolvePurifiedHTML(.htmlCache[url]);
                 return; // STOP.
             }
 
@@ -767,7 +767,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                         }
 
                         // Cache it
-                        Nutshell.htmlCache[url] = pageHTML;
+                        .htmlCache[url] = pageHTML;
 
                         // FULFIL THE PROPHECY
                         resolvePurifiedHTML(pageHTML);
@@ -778,7 +778,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                 setTimeout(()=>{
                     rejectPurifiedHTML(
                         `<p>
-                        ${Nutshell.getLocalizedText("wikiError")}
+                        ${.getLocalizedText("wikiError")}
                         <a target='_blank' href='${url}'>${url}</a>
                         </p>`
                     );
@@ -833,7 +833,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                             if(err.message=='404'){
                                 return rejectPurifiedHTML(
                                     `<p>
-                                    ${Nutshell.getLocalizedText("notFoundError")}
+                                    ${.getLocalizedText("notFoundError")}
                                     <a target='_blank' href='${url}'>${url}</a>
                                     </p>`
                                 );
@@ -877,7 +877,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                                     _removeIframeAndListener();
                                     rejectPurifiedHTML(
                                         `<p>
-                                        ${Nutshell.getLocalizedText("corsError")}
+                                        ${.getLocalizedText("corsError")}
                                         <a target='_blank' href='${url}'>${url}</a>
                                         </p>`
                                     );
@@ -890,8 +890,8 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                 // SECOND, make PROCESSED HTML
                 getRawHTMLPromise.then((rawHTML)=>{
                     // Cache & gimme.
-                    Nutshell.htmlCache[url] = _purifyHTML(rawHTML, url);
-                    resolvePurifiedHTML( Nutshell.htmlCache[url] );
+                    .htmlCache[url] = _purifyHTML(rawHTML, url);
+                    resolvePurifiedHTML( .htmlCache[url] );
                 });
             }
         });
@@ -963,7 +963,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     let _sendParentMyHTML = ()=>{
         window.parent.postMessage(
             JSON.stringify({
-                url: Nutshell.thisPageURL, // the url I'm repping
+                url: .thisPageURL, // the url I'm repping
                 html: document.body.innerHTML
             }),
         '*');
@@ -976,7 +976,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     /////////////////////////////////////////////////////////////////////
 
     // Promise!
-    Nutshell.promiseSectionContainer = (expandable)=>{
+    .promiseSectionContainer = (expandable)=>{
 
         // A promise...
         return new Promise((resolve,reject)=>{
@@ -993,7 +993,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
             // After getting the purified HTML, find section,
             // then put it in a container, and resolve with that.
-            Nutshell.promisePurifiedHTMLFromURL(url).then((purifiedHTML)=>{
+            .promisePurifiedHTMLFromURL(url).then((purifiedHTML)=>{
 
                 if(_isWikipedia(url) || _isYouTube(url)){
                     // If it's Wikipedia or YouTube, just give it, it's already ready!
@@ -1072,7 +1072,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
                         // If after all that, STILL none, tell user the error.
                         if(!foundHeading){
-                            containerHTML = `<p>${Nutshell.getLocalizedText("sectionIDError").replace('[ID]',sectionID)}</p>`;
+                            containerHTML = `<p>${.getLocalizedText("sectionIDError").replace('[ID]',sectionID)}</p>`;
                         }else{
 
                             // Now get everything from the start of the section (right after heading)
@@ -1143,7 +1143,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
                             // If after all that, STILL none, tell user the error.
                             if(!found){
-                                containerHTML = `<p>${Nutshell.getLocalizedText("startTextError").replace('[start]',startText)}</p>`;
+                                containerHTML = `<p>${.getLocalizedText("startTextError").replace('[start]',startText)}</p>`;
                             }else{
 
                                 // Add the found paragraph.
@@ -1238,11 +1238,11 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
     // Add "from" source paragraph, if source is not THIS page
     let _addSource = (url)=>{
-        if(url == Nutshell.thisPageURL){
+        if(url == .thisPageURL){
             return ''; // nah.
         }else{
             let urlSansProtocol = url.split("://")[1];
-            return `<p class='nutshell-bubble-from'> from <a target='_blank' href='${url}'>${urlSansProtocol}</a></p>`
+            return `<p class='-bubble-from'> from <a target='_blank' href='${url}'>${urlSansProtocol}</a></p>`
         }
     }
 
@@ -1266,7 +1266,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     // ⭐️ Create & return bubble, using an expandable's data
     /////////////////////////////////////////////////////////////////////
 
-    Nutshell.createBubble = (expandable, clickX)=>{
+    .createBubble = (expandable, clickX)=>{
 
         /**************************
 
@@ -1294,12 +1294,12 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
         // Make a bubble container!
         let bubble = document.createElement('div');
-        bubble.className = 'nutshell-bubble';
+        bubble.className = '-bubble';
         // Subtly move down
         bubble.style.top = '-5px';
         setTimeout(()=>{ bubble.style.top = '0px'; },1);
         // RESET FONT STYLE to that of first parent node. Or document.body.
-        let p = expandable.parentNode || document.body;
+        let p = document.body;
         let parentNodeStyle = window.getComputedStyle(p);
         bubble.style.color = parentNodeStyle.color;
         bubble.style.fontSize = parentNodeStyle.fontSize;
@@ -1310,7 +1310,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
         // A speech-bubble arrow, positioned at X of *where you clicked*???
         let arrow = document.createElement("div");
-        arrow.className = "nutshell-bubble-arrow";
+        arrow.className = "-bubble-arrow";
         bubble.appendChild(arrow);
 
         // ARROW & BUBBLE COLOR. Background is background, Border is font color...
@@ -1345,7 +1345,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
             // What's the width of the container the expandable is in?
             let cont = _findFirstParentWithFilter(p,(cont)=>{
-                return cont.className=='nutshell-bubble-overflow-section';
+                return cont.className=='-bubble-overflow-section';
             });
             if(cont){
                 let sectionWidth = cont.getBoundingClientRect().width,
@@ -1363,28 +1363,28 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
         // The Overflow container
         let overflow = document.createElement('div');
-        overflow.className = 'nutshell-bubble-overflow';
+        overflow.className = '-bubble-overflow';
         overflow.setAttribute("mode","opening");
         overflow.style.height = "0px"; // start closed
         bubble.appendChild(overflow);
 
         // Embed Button
        let embed = document.createElement('div');
-        embed.className = 'nutshell-bubble-overflow-embed-button';
-        embed.innerHTML = `<img src='${Nutshell._dataURIImage}'/>`;
+        embed.className = '-bubble-overflow-embed-button';
+        embed.innerHTML = `<img src='${._dataURIImage}'/>`;
         embed.onclick = ()=>{
-            Nutshell.showEmbedModal(expandable.href, expandable.textContent);
+            .showEmbedModal(expandable.href, expandable.textContent);
         };
         overflow.appendChild(embed);
 
         // Section
         let section = document.createElement('div');
-        section.className = "nutshell-bubble-overflow-section";
+        section.className = "-bubble-overflow-section";
         overflow.appendChild(section);
 
         // Close Button
         let close = document.createElement('button');
-        close.className = 'nutshell-bubble-overflow-close';
+        close.className = '-bubble-overflow-close';
         close.innerHTML = '&times;';
         close.ariaLabel = "Close";
         close.onclick = ()=>{
@@ -1413,10 +1413,10 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
         // Get the section (using expandable's data),
         // and put it in bubble's Section Container when it loads!
-        Nutshell.promiseSectionContainer(expandable).then((content)=>{
+        .promiseSectionContainer(expandable).then((content)=>{
 
-            // Links to Nutshell Expandables (yay recursion!)
-            Nutshell.convertLinksToExpandables(content, expandable);
+            // Links to  Expandables (yay recursion!)
+            .convertLinksToExpandables(content, expandable);
 
             // Put in section's content
             section.innerHTML = '';
@@ -1485,9 +1485,9 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                 expandable.setAttribute("mode", "closed"); // and tell Expandable to show it, too
             }, ANIM_TIME+1);
 
-            // Count the killed bubbles inside, subtract from Nutshell._nutshellsOpen
-            Nutshell._nutshellsOpen -= bubble.querySelectorAll('.nutshell-bubble').length;
-            Nutshell._updateCloseAllNutshells();
+            // Count the killed bubbles inside, subtract from ._sOpen
+            ._sOpen -= bubble.querySelectorAll('.-bubble').length;
+            ._updateCloseAlls();
 
         };
 
@@ -1510,25 +1510,25 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     // ⭐️ Convert <h*> headings: On hover, show embed option
     /////////////////////////////////////////////////////////////////////
 
-    Nutshell.convertHeadings = (el=document.body)=>{
+    .convertHeadings = (el=document.body)=>{
 
         // For each heading, a container that only shows on hover!
         _getAllHeadings(el).forEach((heading)=>{
 
             // So it can show stuff on hover
-            heading.classList.add('nutshell-heading');
+            heading.classList.add('-heading');
 
             // Info needed for embed & permalink
             let headingText = heading.innerText,
                 sectionID = headingText.replace(/[^A-Za-z0-9]/g,''), // bye punctuation
-                permalink = Nutshell.thisPageURL+"#"+sectionID;
+                permalink = .thisPageURL+"#"+sectionID;
 
             /* Embed button
             let embedButton = document.createElement('div');
-            embedButton.className = 'nutshell-heading-embed';
-            embedButton.innerHTML = `<img src='${Nutshell._dataURIImage}'/>`;
+            embedButton.className = '-heading-embed';
+            embedButton.innerHTML = `<img src='${._dataURIImage}'/>`;
             embedButton.onclick = ()=>{
-                Nutshell.showEmbedModal(permalink, headingText);
+                .showEmbedModal(permalink, headingText);
             };
             heading.appendChild(embedButton);*/
 
@@ -1548,7 +1548,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     // If heading *begins* with ":",
     // replace it and following section with just a link!
     // (And if it starts with ":x", DELETE ENTIRELY.)
-    Nutshell.hideHeadings = (el=document.body)=>{
+    .hideHeadings = (el=document.body)=>{
 
         // Temporary dividers to remove later...
         let tmpDividers = [];
@@ -1626,56 +1626,56 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     /////////////////////////////////////////////////////////////////////
 
     // Create that big ol' element. Start hidden
-    Nutshell.embedModal = document.createElement("div");
-    let _e = Nutshell.embedModal;
-    _e.className = 'nutshell-embed-modal';
+    .embedModal = document.createElement("div");
+    let _e = .embedModal;
+    _e.className = '-embed-modal';
     _e.setAttribute("mode","hidden");
     _e.style.display = 'none';
 
     // Will fill out HTML later with localized text
     _e.innerHTML = `
-        <div id="nutshell-embed-modal-bg" onclick="Nutshell.closeEmbedModal();"></div>
-        <div id="nutshell-embed-modal-bubble">
-            <div id="nutshell-embed-modal-close" onclick="Nutshell.closeEmbedModal();">&times;</div>
-            <div id="nutshell-embed-modal-overflow">
-                <p id="nutshell-embed-p0"></p>
-                <p id="nutshell-embed-p1"></p>
-                <p id="nutshell-embed-p2"></p>
-                <p id="nutshell-embed-p3"></p>
-                <p id="nutshell-embed-p4"></p>
+        <div id="-embed-modal-bg" onclick=".closeEmbedModal();"></div>
+        <div id="-embed-modal-bubble">
+            <div id="-embed-modal-close" onclick=".closeEmbedModal();">&times;</div>
+            <div id="-embed-modal-overflow">
+                <p id="-embed-p0"></p>
+                <p id="-embed-p1"></p>
+                <p id="-embed-p2"></p>
+                <p id="-embed-p3"></p>
+                <p id="-embed-p4"></p>
             </div>
         </div>
     `;
 
     // Shortcut variables because ugh this is messy code
-    let _p0 = _e.querySelector("#nutshell-embed-p0"),
-        _p1 = _e.querySelector("#nutshell-embed-p1"),
-        _p2 = _e.querySelector("#nutshell-embed-p2"),
-        _p3 = _e.querySelector("#nutshell-embed-p3"),
-        _p4 = _e.querySelector("#nutshell-embed-p4");
+    let _p0 = _e.querySelector("#-embed-p0"),
+        _p1 = _e.querySelector("#-embed-p1"),
+        _p2 = _e.querySelector("#-embed-p2"),
+        _p3 = _e.querySelector("#-embed-p3"),
+        _p4 = _e.querySelector("#-embed-p4");
 
-    // When Nutshell starts, populate with text localization
-    Nutshell.fillEmbedModalText = ()=>{
+    // When  starts, populate with text localization
+    .fillEmbedModalText = ()=>{
 
         // Step 0: Intro, and example Expandable
         // [DO THIS WHEN SHOW MODAL, because example needs to change each time]
 
         // Step 1: Code for head
-        _p1.innerHTML = Nutshell.getLocalizedText("embedStep1")
+        _p1.innerHTML = .getLocalizedText("embedStep1")
             .replace(`[HEAD]`, `<span style="font-family:monospace">&lt;head&gt;</span>`)
-            .replace(`[CODE]`, `<input style="width:100%" value="<script src='${Nutshell.cdn}'></script>" onclick="select()"/>`);
+            .replace(`[CODE]`, `<input style="width:100%" value="<script src='${.cdn}'></script>" onclick="select()"/>`);
 
         // Step 2: Link
-        _p2.innerHTML = Nutshell.getLocalizedText("embedStep2")
+        _p2.innerHTML = .getLocalizedText("embedStep2")
             .replace(`[LINK]`,`
-                <input id="nutshell-embed-modal-link" onclick="select()"/>`);
+                <input id="-embed-modal-link" onclick="select()"/>`);
 
         // Step 3: That's all, folks!
-        _p3.innerHTML = Nutshell.getLocalizedText("embedStep3");
+        _p3.innerHTML = .getLocalizedText("embedStep3");
 
         // (Learn More)
-        _p4.innerHTML = `<a href='https://ncase.me/nutshell/' target='_blank'>` +
-                            Nutshell.getLocalizedText("learnMore") +
+        _p4.innerHTML = `<a href='https://ncase.me//' target='_blank'>` +
+                            .getLocalizedText("learnMore") +
                         `</a>`;
 
         // Also, now that document.body exists, put it in
@@ -1684,24 +1684,24 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     };
 
     // Show Embed Modal (with what URL & linktext?)
-    Nutshell.showEmbedModal = (url, linkText)=>{
+    .showEmbedModal = (url, linkText)=>{
 
         // Animate: show, then fade in.
         _e.style.display = 'block';
         setTimeout(()=>{ _e.setAttribute("mode","shown"); },1);
 
         // Reset Step 0's Example
-        _p0.innerHTML = Nutshell.getLocalizedText("embedStep0")
+        _p0.innerHTML = .getLocalizedText("embedStep0")
             .replace(`[EXAMPLE]`,`<a href='${url}' style='font-weight:bold'>:${linkText}</a>`);
-        Nutshell.convertLinksToExpandables(_p0);
+        .convertLinksToExpandables(_p0);
 
         // Update Step 2's link URL
-        _e.querySelector("#nutshell-embed-modal-link").value = url;
+        _e.querySelector("#-embed-modal-link").value = url;
 
     };
 
     // Hide Embed Modal
-    Nutshell.closeEmbedModal = ()=>{
+    .closeEmbedModal = ()=>{
         // Animate: fade away, then hide
         _e.setAttribute("mode","hidden");
         setTimeout(()=>{ _e.style.display='none'; },ANIM_TIME);
@@ -1709,22 +1709,22 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
 
     /////////////////////////////////////////////////////////////////////
-    // ⭐️ NUTSHELL STYLE (putting css in js, so Nutshell is *one* file)
+    // ⭐️  STYLE (putting css in js, so  is *one* file)
     /////////////////////////////////////////////////////////////////////
 
-    // The tiny Nutshell icon
-    Nutshell._dataURIImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAQIklEQVR4nO2d23XqyBKG/znrvDcTgZgIYCKQTgT4RCAmAjwR4BMBngjEjgDvCJAjEI5AcgSCCHQetJnxeAyqvkity/+t1S/QqKRWFVXVV4AQQgghhDjmJ983MHAUgAjA8keZ3ah3BnD6Ub4PWC4hIkIACYASQKVZSgA7AIsBySVERAjgCH3lvFWOAIIeyyVEhEL97+tKQb/6Z++TXELELADkaEdJP/+rqx7IJURMALN437RknuUSIkahVpyulPRaEo9yCRFzQPdK6rswJyEiNvCvrL7KykH7kRETwL+S+iwlmLT/yb9930AP2Zv8KI5jRFGE+Xz+t8+LokCapvj27ZuDW+tE7gzAM4Df3NwhGRMhNP9xV6tVVZZl1URZltVqtXL2T9+B3KClNiYDJoGGEiVJ0qign0mSxNo4OpKbtNjOZIAoaChQHMfaSnoljmNj4+hQbtluc5OhsYJQecIwNFbSK2EYahuHB7ns0SJ/Ip7zlOe5taLmea5tIB7kbltvddJ7FOp/yhwthzif0Ql5PMk9dtD+pIcoADEMRssPh4MzRT0cDr2X+6ONNuDYyCRYwXIKiaRrVUpZlr2X+6kcwbxkdCjUsbQohGoqrum73BulRN0NHLTwvkhHhGhhwqEvRfUlV1AOP9qaDIQQbpen9kJRfcnVKDloKL1mgRYN41p8KaovuQYlAw2lVwTQnCJiU3wpqi+5FoWhl2euyXeXS1O9KaovuQ7KDgPuIh7qxnEr1FOy520KCYIAy+USy+USURRhuVxiNru1R5sZP/0kewW1Trvj8fERp9MJr6+vTq97gwL1+/qjC2EuGZqBKACPAJ6cX1ipvxnCcrn8xxqLNvBlIB85nU44nU5I0xSn0wlvb29tiUoBrAG8tyVgyoRwvA1OEATVbrdzMsep7VCna47HY7Xb7ZyuYflRStSzGIgjnG+eFsdxdTweO1e6r5Des0/Ksqy2220VBIFLQ0nAgUZrFBx13V69hcspGy6Q3n9fSJLEaKr+jVKCU1eMCeGghyoIAqMVeF0hfY6+cTgcXBrKthUNGjHW2+4opXptGFekz9NXDodDtVgsXBjJAQPuDu6SBJaGsd1uexdK3UL6XH0nSZJKKWVrJBl4PMNNrLf6XK1WXnukTJA+2xC4JvM27xB1WE0j+UQAC+MIgqA3vVK6SJ9xSGRZ5iLsilvTtoGhYJGMh2E4OK/xEelzDpHdbmcbdk3eSBYwNA6lVLXb7XzrgDXS5x0qlt5k0oOKAQyNY+he4yPSZx4yZVla7QWGCY6VGCfk0i03h4L0ucfAbrez8SSTSdyNjWMMIdVnpM8+Fo7Ho2leMgkjMTIOpZTTbW/6hLQNxkSWZabzukZvJEdoNkoQBFWWZb7faWtI22FslGVpmrznGOmIewIDzzGWZPwW0rYYIxZG0tmho//qSM4W9UIZMYvFAkVRdLJoifhhNpvhdDohjmPdny5Rz90aBTEMwqox9VTdQ9omY8dwYdbgDx3VHghUSo065/iMtF3GjkW4pe1+dGhzTboCcILGxgpKKaRpiuVy2dpN9Y0+rEnvC+fzGVEU6a6JPwOIALSykL7NHGQPGgfRYDabIU1TLBZaPbkz1Lo2qJ4t7QVPYx3naELaPlMiyzKTwcSkbaV2xQKaxjGElX9tIW2jqWFoJL2fs6WguTXPZrPx/S68Im2nKWJwMm+JnodaWtvzuDiUcuhI22qqbDYbXSM5ulRol71YIeqd80QEQYDT6eR8K8+hwV6sZpbLpW7P1hrANxeyXRpIDo1eq+PxiCiKHIofJjSQZoqiwHK5xOVykf7kjFoXxT+4hatu3i00jGO73dI4iJj5fI79fq/zkxla2L/ZlADMO4yRthsxykdCW+V2EWIdADxIKiqlUBTF5POOjzDE0mM+n+P9Xbw5fArgPzbybEOsEELjAIDn52caB7FCM9SK4HnThyMYWlkhbT/yF5obQOQ2Cm4TYml162ZZxnlWX8AQS5/z+Yz5fK7Tq7WGYbevTYj1LK243W5pHMQZs9kMT09POj/RqvwRUw8i9h4cELwPPYg5mgOIaxh4EVMP8iSu+PRE4yCt8PwsDmIAQy9i4kEWqBdCNRIEAYqiMBAxHehB7IiiSOek3giA1rG+Jh7kUVpRM04kRBtNHRPr7hVdD6JQz3NphN5DBj2IPZpeZA6NY6h1PchaWpHeg3TF46OWY1jrVNb1IKIZu0opnM8iRzN56EHcoDEFpQDwi/S6Oh5kAeGMXU2LJsQaDZ2bQ2Npro4H2UGY5OR5zh0RhdCDuOF8PuPnn3+WVt8D+E1SUceDiCYlrlYrGgfpnNlsprOFqXiCrdRAxOHVer2WyibEKQ8PYr2fQRhmSUMsUXjF5Fwfhlhu0UjWnwH83lRJ6kFEpqlhwYS0goYOiipKDCSAMLyigRDfaOx1MEet23eR+PcYddbfCMMAfRhiuWc2m0nXijwC+ONeBYkHiSSSVqve7/pIJoKGF2lcpOTMQLiND+kLGrrYWLHJQBSE+QcNhPQFjVx4joY8pMlAIokUpRSX1JLeMJ/PoZR4D+u7ittkICKtp/cgfcNVHuLEg9B7kL6hoZPRvS+bDGQukkAPQnqG5njITZo64UWd75y9aw7HQdpBc3bvzZdwz4OIN/6lcZC+MZvNdBL1m7puffxBGFpvoE1IK7jIje8ZSCS5AL0H6Ssauhnd+sLag9BASF9xoZv3DETkn7hrIukrGroZ3frinoGIrs4xENJX2s5BCJk8DLHIaNHQzZu6fm+USjQyxQEsOzhQ2C7S9sUNW2CIRcgdaCCE3IEGQsgdaCCE3IEGQsgdaCCE3IEGQsgdaCCE3MHaQLhZNekrLnTznoGkkgucTqIToQnpHA3dTG99wRCLkDvQQAi5wz0DKSQXSNPUyY0Q4hoN3SxufWFtIISMgOLWF9YhFpN00leKorC+hnUvFrt5SV/RMJD01hfWHuT19dX2EoS0govoxsnWo2VZcumtIVxR2A5dbD0KCBN15iGkb2joZHHvSycGwq5e0jdcdPECzQYikkIPQvqGi2kmQLOBiKTQg5C+0VWIJZJyuVyc9DkT4oKiKPD+/i6tflfHmwzkHcxDyMDQ8B5nAG/3KkjGQRhmkUHx8vIirZo2VZAYSONFAK2bIqRVNP6sGys6M5DL5cLeLOKd0+mkk3+kTRUkBvIGYR6y3+8l1QhpDQ0dbMw/APlcrFRSiWEW8Y2GDooqSg1EdLH393cm68QbmuGVUwP5jtolNcIwi/hCU/dSSSXx4QkAEgDrpkpKKa4R0YCzed0xn8+lHuQFwH8lFXXWg4hc0uVyoRchnfPy8uI8vAL0DIRhFuktmr1X36SVdVcUiu7i9fWVyTrpjKIo8P37d2l1ra7WVgwEAJ6enjQvTYgZmrq216msk6RfySA8ATfLMp6j3gCTdDuKosAvv/wirg5AXBkw27ThWVzxWVyVECM0vYe2Qpp4EADIAcxFFfMc87mo6iShBzFH03ucUevsRUeG6bY/T9KK6/XaUAQh9zHwHlrGAZh7EIU6nhPt9XM8HhFFkaGocUMPYsbpdMKvv/4qrW7kPQBzD3KBRjxHL0Jc8/j4qFPdyHsAdjsrPkM4cPj+/s5uX+KM/X6vs6PnGQbJ+RXTEOvKRipcKYXT6cSE/RMMsfQ4n8+Yz+e4XMQO4QnA/0zl2e7N+weEi6kulwtDLWLNer3WMQ4r7wG4OWFKHAy+vr5ybIQYk6apzpQSoPYeRrnHFdsQ68oRQCStzBH2v2CIJcMgtDoBEHdz3cLVGYVrCBN2oHaTXDNCdHh4eNAxDkAjsrmHKwN5h0as9/b2pttNRybM09OT7jk0ewC9PLgmQ32miKgkSVJNHWlbTZXj8Shuox8lRz2Q7QRXOciVBYQ7MQJ112+appPOR5iD3MYg7wCAB9SL+5zg+pz0N2jM07pcLoiiiPkI+ZIoinSNYw+HxgG4NxCgHpRJpZVpJOQr1us13t4a93X7SAFHiXkXKAAlNGLHMAx9h7tekLbPlNhsNrp5R4U6vB8UITQfMo5j3++mc6RtMxWSJDExjk3LutwaW9BI7iJtlylgaByHlnW4dQ4wMJKyLH2/r06QtsnY2e12JsaRwWGXri8UNMdHAFSr1cr3O+sEaXuMmTiOTYyjxADzjlsE0EzaAVSLxWL0nkTaFmPFwjjCVjXWAwvQSP6BtB3GiKFxVADiVjXVIysYNEgQBFWWZb7fZytI22BMlGVZLRYLU+PYtqqhPSCGQcMopUZpJNLnHwtZltkYx65VzewRRkYCoNrtdr7fsVOkzz0GjsdjpZQyNY6kTYXsIzEMchJgXGMl0mceOobduJPzHJ8xykmAOnnP89z3e7dG+rxDpSxLm2S8wogTcilGvVtAnZcMPeSSPusQORwONvkGjeMDIQyNBKgnOg61K1j6jEOiLEvTCYc0jjsEqFeDGTWoUmqQKxSlzzcULHupaBwNBDCYlvKxhGE4qO5g6XP1nTzPq9VqZWsYoxwhd41C3aVn1dhxHA8iiZc+T18py7La7XY23bfXkmNEc6u6YAdLI1FKVdvtttf5ifRZ+kZZllWSJC4Mo0K9r9rgZ+X6IIRF8n4tfTYU6TP0BceGUWLCYxyuCGCZl1yLUqparVbV8Xj0rWd/Ir133+R5Xm23W1eGUf14pwypHLKFmxdTAfVAY5Ik3r2K9H59kOd5lSSJ7UDfVyUBQ6pWWMCRN7mWq1fxZSzS++yCsiyrw+FQxXFcBUHg2igq1CHVyq1KkK+wTuBvlTAMq91u11kPmPS+2uJwOFSbzcbF2EVTOaAOl0lHhHDsTT6XxWLRurFI78U1YRi2bRDXkoNjG17ZwEFPV1MJgqDabDbOFVUq35dci1L+eDfMNXqAguMk/lbxpai+5BqWBDSMXhLAwSj8veJLUX3J1SwJ2HU7CFozFF+K6kuusCQYaQLu+viDvhGg3g7/EfVB8tZUjo8h8HX8gVTuHa4HZO5RH6BEBs4K9ZwfehANuV+UIyY0HX3sHuQrAtRnKj4A0D65p5qmBylQe4o96C0mxQL1oKN4PMXlWpMsy8T/3L7kYqS5hZQ2DtAZEm8Afkd9XHAq+UGaiqqJ0LmWJ7kpJu4xpm4gHxEdcfXy8uJMoM61PMktnAklg2cDYdjhYu27yVkYHuQO9mAa4p4FhIqjlLKa+VuWpdG6Cg9yJ51/kH+SQ6g8prvOW27c3KXcvOW2JgNkC81/dJ3epSzLnKzI60hu3GI7k4GifTqvUqrabDZ3/9WvG6k5XK7attwcnGwIYJoDhU1sATzp/kgphYeHB8zn8799XhQFXl5ecLlc3NxdN3LXAL7Z3x0ZK60uxOp5GfypsaR9jDfUHnhhaEXExPCjpL4Mc1SnxpJu6NpIrkrqSy4h2nQVbmX4e3jjSy4h2rStrLeU1JdcQoxoYz8uyd60vuQSok0IN93AR+jF/b7kEmLEAvVmBTnkypnDfucPX3InCUfS3RCiXr47u/H9GcAJwOtI5BJCCPB/uPEpO3UgX4oAAAAASUVORK5CYII=";
+    // The tiny  icon
+    ._dataURIImage = "data:image/png;base64,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";
 
-    Nutshell.defaultStyle = `
+    .defaultStyle = `
 
     /***************************************************
     HEADERS with link / embed options
     ***************************************************/
 
-    .nutshell-heading{
+    .-heading{
         position:relative;
     }
-    .nutshell-heading-embed{
+    .-heading-embed{
 
         /* Position at end of heading text */
         width: 0; /* don't force newline */
@@ -1738,16 +1738,16 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         transition: all 0.1s ease-in-out;
 
     }
-    .nutshell-heading-embed img{
+    .-heading-embed img{
         width:1em; height:1em;
         min-width: 1em;
         min-height: 1em; /* some deal with the devil */
     }
-    .nutshell-heading:hover .nutshell-heading-embed{
+    .-heading:hover .-heading-embed{
         left:0.25em;
         opacity:0.33;
     }
-    .nutshell-heading:hover .nutshell-heading-embed:hover{
+    .-heading:hover .-heading-embed:hover{
         opacity:1;
     }
 
@@ -1755,7 +1755,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     EXPANDABLE LINKS
     ***************************************************/
 
-    .nutshell-expandable{
+    .-expandable{
 
         /* Boring style to fit parent */
         color: inherit;
@@ -1770,15 +1770,15 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         opacity: 1;
 
     }
-    .nutshell-expandable:hover{
+    .-expandable:hover{
         color: inherit;
         opacity: 0.8;
     }
-    .nutshell-expandable .nutshell-expandable-text{
+    .-expandable .-expandable-text{
         padding-left: 0.35em; /* Give balls space */
     }
     /* The balls! */
-    .nutshell-ball-up, .nutshell-ball-down{
+    .-ball-up, .-ball-down{
 
         /* Placed to the left */
         position: absolute;
@@ -1796,17 +1796,17 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
     }
     /* Ball animation! Depends on open/closed, hover */
-    .nutshell-expandable[mode=closed] .nutshell-ball-up{            top:0.4em;  }
-    .nutshell-expandable[mode=closed] .nutshell-ball-down{          top:0.7em;  }
-    .nutshell-expandable[mode=closed]:hover .nutshell-ball-up{      top:0.2em;  }
-    .nutshell-expandable[mode=closed]:hover .nutshell-ball-down{    top:0.9em;  }
-    .nutshell-expandable[mode=open] .nutshell-ball-up{              top:0.4em;  }
-    .nutshell-expandable[mode=open] .nutshell-ball-down{            top:0.7em;  }
-    .nutshell-expandable[mode=open]:hover .nutshell-ball-up{        top:0.55em; }
-    .nutshell-expandable[mode=open]:hover .nutshell-ball-down{      top:0.55em; }
+    .-expandable[mode=closed] .-ball-up{            top:0.4em;  }
+    .-expandable[mode=closed] .-ball-down{          top:0.7em;  }
+    .-expandable[mode=closed]:hover .-ball-up{      top:0.2em;  }
+    .-expandable[mode=closed]:hover .-ball-down{    top:0.9em;  }
+    .-expandable[mode=open] .-ball-up{              top:0.4em;  }
+    .-expandable[mode=open] .-ball-down{            top:0.7em;  }
+    .-expandable[mode=open]:hover .-ball-up{        top:0.55em; }
+    .-expandable[mode=open]:hover .-ball-down{      top:0.55em; }
 
     /* Followup! */
-    .nutshell-followup{
+    .-followup{
         opacity:0.33;
     }
 
@@ -1814,7 +1814,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     BUBBLES:
     ***************************************************/
 
-    .nutshell-bubble{
+    .-bubble{
 
         /* Gon' stretch out */
         display: inline-block;
@@ -1837,7 +1837,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     }
 
     /* Arrow outline */
-    .nutshell-bubble-arrow{
+    .-bubble-arrow{
         width: 0;
         height: 0;
         border-left: 20px solid transparent;
@@ -1851,7 +1851,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     }
 
     /* Arrow white */
-    .nutshell-bubble-arrow::after{
+    .-bubble-arrow::after{
         content: "";
         width: 0;
         height: 0;
@@ -1866,18 +1866,18 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     }
 
     /* Overflow: contains the head/section/food */
-    .nutshell-bubble-overflow{
+    .-bubble-overflow{
         overflow: hidden;
     }
-    .nutshell-bubble-overflow[mode=opening]{
+    .-bubble-overflow[mode=opening]{
         transition: height 0.3s ease-out; /* Snap to open */
     }
-    .nutshell-bubble-overflow[mode=closing]{
+    .-bubble-overflow[mode=closing]{
         transition: height 0.3s ease-in; /* Snap to close */
     }
 
     /* Head: Embed Button, show on hover */
-    .nutshell-bubble-overflow-embed-button{
+    .-bubble-overflow-embed-button{
         position: absolute;
         top:5px; right:10px;
         width:1em; height:1em;
@@ -1885,50 +1885,50 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         transition: all 0.1s ease-in-out;
         cursor:pointer;
     }
-    .nutshell-bubble-overflow-embed-button img{
+    .-bubble-overflow-embed-button img{
         width:1em; height:1em;
     }
-    .nutshell-bubble-overflow:hover > .nutshell-bubble-overflow-embed-button{
+    .-bubble-overflow:hover > .-bubble-overflow-embed-button{
         right: 5px;
         opacity: 0.33;
     }
-    .nutshell-bubble-overflow:hover > .nutshell-bubble-overflow-embed-button:hover{
+    .-bubble-overflow:hover > .-bubble-overflow-embed-button:hover{
         opacity: 1.0;
     }
     /* NO EMBEDDING IF IT'S A PREVIEW INSIDE EMBED MODAL */
-    .nutshell-embed-modal .nutshell-bubble-overflow-embed-button{
+    .-embed-modal .-bubble-overflow-embed-button{
         display:none;
     }
 
     /* Section */
-    .nutshell-bubble-overflow-section{
+    .-bubble-overflow-section{
         padding: 0 1em;
         padding-bottom: 0.5em;
         overflow: hidden; /* to capture full height, including <p>'s margins */
     }
-    .nutshell-bubble-overflow-section > div{
+    .-bubble-overflow-section > div{
         margin: 1em 0; /* if you people forgot to put your text in <p>'s -_- */
     }
-    .nutshell-bubble-overflow-section img{
+    .-bubble-overflow-section img{
         max-width:100%; /* so it fits */
     }
-    .nutshell-bubble-overflow-section video{
+    .-bubble-overflow-section video{
         max-width:100%; /* so it fits */
     }
     /* Total hack for nice styling */
-    .nutshell-bubble-overflow-section img[data-float=left]{
+    .-bubble-overflow-section img[data-float=left]{
         float: left;
         margin: 1em;
     }
-    .nutshell-bubble-overflow-section img[data-float=right]{
+    .-bubble-overflow-section img[data-float=right]{
         float: right;
         margin: 1em;
     }
-    .nutshell-bubble-overflow-section iframe{
+    .-bubble-overflow-section iframe{
         max-width:100%; /* so it fits */
         border: 1px solid rgba(0,0,0,0.2);
     }
-    .nutshell-bubble-overflow-section .nutshell-bubble{
+    .-bubble-overflow-section .-bubble{
         /* So that recursive bubbles don't get squashed too quickly */
         width: calc(100% + 2em - 6px); /* undo section's padding, minus a gap */
         position: relative;
@@ -1936,7 +1936,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     }
 
     /* From */
-    .nutshell-bubble-from{
+    .-bubble-from{
         font-size: 0.69em;
         /* line-height: 0.69em; */
         margin-bottom: -0.69em;
@@ -1944,7 +1944,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     }
 
     /* Foot: is a close button, too. */
-    .nutshell-bubble-overflow-close{
+    .-bubble-overflow-close{
 
         /* A &times; sign */
         font-family: inherit;
@@ -1964,22 +1964,22 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         transition: opacity 0.1s ease-in-out;
 
     }
-    .nutshell-bubble-overflow-close:hover{
+    .-bubble-overflow-close:hover{
         background: none;
         opacity:1;
     }
 
     /* Misc styling for bubbles. I am a busybody. */
-    .nutshell-bubble li{
+    .-bubble li{
         margin-bottom: 0.5em;
     }
-    .nutshell-bubble code{
+    .-bubble code{
         background: #ddd;
         border-radius: 5px;
         /*font-weight:100;*/
         padding: 0 5px;
     }
-    .nutshell-bubble blockquote{
+    .-bubble blockquote{
         /*background: #eee;*/
         margin-left: 0px;
         margin-right: 0px;
@@ -1992,7 +1992,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     EMBED MODAL
     ***************************************************/
 
-    .nutshell-embed-modal{
+    .-embed-modal{
 
         /* TAKE UP WHOLE SCREEN */
         position: fixed;
@@ -2006,11 +2006,11 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         transition: opacity 0.3s ease-in-out;
         opacity: 1;
     }
-    .nutshell-embed-modal[mode=shown]{  opacity:1; }
-    .nutshell-embed-modal[mode=hidden]{ opacity:0; }
+    .-embed-modal[mode=shown]{  opacity:1; }
+    .-embed-modal[mode=hidden]{ opacity:0; }
 
     /* Background is a big transparent black */
-    #nutshell-embed-modal-bg{
+    #-embed-modal-bg{
         position: absolute;
         top: 0;
         left: 0;
@@ -2020,7 +2020,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     }
 
     /* Bubble is a big white rounded rect */
-    #nutshell-embed-modal-bubble{
+    #-embed-modal-bubble{
 
         /* In the middle */
         position: absolute;
@@ -2039,11 +2039,11 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         /* Animate by slide up */
         transition: top 0.3s ease-in-out;
     }
-    .nutshell-embed-modal[mode=shown] #nutshell-embed-modal-bubble{  top:0;     }
-    .nutshell-embed-modal[mode=hidden] #nutshell-embed-modal-bubble{ top:100px; }
+    .-embed-modal[mode=shown] #-embed-modal-bubble{  top:0;     }
+    .-embed-modal[mode=hidden] #-embed-modal-bubble{ top:100px; }
 
     /* Close button */
-    #nutshell-embed-modal-close{
+    #-embed-modal-close{
 
         /* Top right button */
         z-index: 999;
@@ -2061,12 +2061,12 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         transition: opacity 0.1s ease-in-out;
 
     }
-    #nutshell-embed-modal-close:hover{
+    #-embed-modal-close:hover{
         opacity:1;
     }
 
     /* Can scroll inside! */
-    #nutshell-embed-modal-overflow{
+    #-embed-modal-overflow{
         overflow-x: visible;
         overflow-y: scroll;
         padding: 15px 30px;
@@ -2075,14 +2075,14 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     }
 
     /* The "inputs" in the modal should look code-like */
-    #nutshell-embed-modal-bubble input{
+    #-embed-modal-bubble input{
         width: 100%;
         font-size: 14px;
         font-family: monospace;
     }
 
     /* Learn More */
-    #nutshell-embed-p4{
+    #-embed-p4{
         font-size: 0.7em;
         line-height: 0em;
         text-align: center;
@@ -2090,10 +2090,10 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     }
 
     /***************************************************
-    CLOSE ALL NUTSHELLS
+    CLOSE ALL S
     ***************************************************/
 
-    #nutshell-close-all{
+    #-close-all{
 
         /* Top-right */
         position: fixed;
@@ -2116,10 +2116,10 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         border-radius: 0 0 0 1em;
 
     }
-    #nutshell-close-all[show=yes]{
+    #-close-all[show=yes]{
         opacity:1;
     }
-    #nutshell-close-all[show=no]{
+    #-close-all[show=no]{
         opacity:0;
     }
 
@@ -2127,21 +2127,21 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
     // I give up on hoping that CSS will be rendered
     // consistently across browsers.
-    Nutshell.firefoxStyle = `
+    .firefoxStyle = `
         /* Ball animation! Depends on open/closed, hover */
-        .nutshell-expandable[mode=closed] .nutshell-ball-up{            top:0.2em;  }
-        .nutshell-expandable[mode=closed] .nutshell-ball-down{          top:0.5em;  }
-        .nutshell-expandable[mode=closed]:hover .nutshell-ball-up{      top:0.0em;  }
-        .nutshell-expandable[mode=closed]:hover .nutshell-ball-down{    top:0.7em;  }
-        .nutshell-expandable[mode=open] .nutshell-ball-up{              top:0.2em;  }
-        .nutshell-expandable[mode=open] .nutshell-ball-down{            top:0.5em;  }
-        .nutshell-expandable[mode=open]:hover .nutshell-ball-up{        top:0.35em; }
-        .nutshell-expandable[mode=open]:hover .nutshell-ball-down{      top:0.35em; }
+        .-expandable[mode=closed] .-ball-up{            top:0.2em;  }
+        .-expandable[mode=closed] .-ball-down{          top:0.5em;  }
+        .-expandable[mode=closed]:hover .-ball-up{      top:0.0em;  }
+        .-expandable[mode=closed]:hover .-ball-down{    top:0.7em;  }
+        .-expandable[mode=open] .-ball-up{              top:0.2em;  }
+        .-expandable[mode=open] .-ball-down{            top:0.5em;  }
+        .-expandable[mode=open]:hover .-ball-up{        top:0.35em; }
+        .-expandable[mode=open]:hover .-ball-down{      top:0.35em; }
     `;
 
 
     // Add the above styles, and any custom the user may have added!
-    Nutshell.addStyles = ()=>{
+    .addStyles = ()=>{
 
         // PREPENDING styles, in reverse order.
         // Prepend so that so user-made CSS can override!
@@ -2150,13 +2150,13 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         // Firefox?
         if(navigator.userAgent.indexOf("Firefox")>0){
             styleEl = document.createElement("style");
-            styleEl.innerHTML = Nutshell.firefoxStyle;
+            styleEl.innerHTML = .firefoxStyle;
             document.head.prepend(styleEl);
         }
 
         // Default
         styleEl = document.createElement("style");
-        styleEl.innerHTML = Nutshell.defaultStyle;
+        styleEl.innerHTML = .defaultStyle;
         document.head.prepend(styleEl);
 
     };
