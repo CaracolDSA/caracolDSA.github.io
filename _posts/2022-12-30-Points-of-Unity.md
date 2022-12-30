@@ -35,6 +35,7 @@ We endorse the overall goals of the degrowth movement, which we summarize here a
 1. **Maximize** humanity’s chances of keeping global heating at or below 1.5C — not 2C — below pre-industrial levels.
 
 2. **Increase and improve** the working class’s free time to achieve greater health and human development, including better actualization of our physical, intellectual, artistic, scientific, and social potential.
+
 3. **Decolonize** the global economy and our growth-indoctrinated imaginaries to redefine prosperity not just in quantitative material but also qualitative terms.
 
 <br>
