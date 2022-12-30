@@ -6,32 +6,6 @@ subtitle: Main page is thisssssss
 
 
 ---
-<!-----
-
-Yay, no errors, warnings, or alerts!
-
-Conversion time: 0.958 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Thu Dec 29 2022 20:17:28 GMT-0800 (PST)
-* Source doc: WORKING DRAFT - Points of Unity [v.5]
------>
-
-
-
-## DRAFT v.5 
-
-
 ## **Preamble**
 
 _ \
