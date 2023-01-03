@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Code of COnduct"
+author: 
+permalink: /code-of-conduct/
+---
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
