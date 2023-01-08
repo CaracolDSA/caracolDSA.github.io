@@ -13,7 +13,8 @@ excerpt_separator: <!--more-->
 “A degrowth society, we propose, is one which, in a democratic process of transformation:
 
 - Enables global ecological justice - in other words, it transforms and reduces its material metabolism, and thus also production and consumption, in such a way that its way of life is ecologically sustainable in the long term and globally just;
-- Strengthens social justice and self-determination and strives for a good life for all under the conditions of this changed metabolism; and
+- Strengthens social justice and self-determination <!--more-->
+ and strives for a good life for all under the conditions of this changed metabolism; and
 - Redesigns its institutions and infrastructure so that they are not dependent on growth and continuous expansion for their functioning.”
 
 
