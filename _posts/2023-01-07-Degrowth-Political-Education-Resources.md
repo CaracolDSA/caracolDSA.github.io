@@ -162,9 +162,11 @@ Giorgos Kallis provides a clear and succinct guide to the central ideas of degro
 
 The LED model represents a “degrowth” scenario – a planned reduction of the material and energy throughput of the global economy. Its inclusion in the IPCC report as the only scenario that does not rely on questionable negative emissions technologies suggests that degrowth may be the only feasible way to achieve the emissions reductions required by the Paris Agreement. This is a major milestone in climate mitigation theory. What is appealing about this approach is that it not only addresses emissions and climate change, but also reduces ecological impact across a range of other key indicators, including deforestation, chemical pollution, soil depletion, biodiversity loss, and so on (Rockstrom et al., 2009; Steffen et al., 2015). 
 
+##[:Various quotes](#Quotes)
 
+##[:From the IPCC Working Group III’s 2014 Mitigation of Climate Change report, Summary for Policymakers](#IPCC)
 
-## :Quotes
+## :x Quotes
 
 Schmelzer et al. in The Future is Degrowth (2022)
 “The core idea [of the ‘imperial mode of living’ concept] is that everyday life in the capitalist centers is essentially made possible through the (violent) shaping of socio-ecological relations in the Global South, and that includes the more or less unlimited access to labor power, natural resources, and pollution sinks on a global scale.” (167)
@@ -192,7 +194,7 @@ Schmelzer et al. in The Future is Degrowth (2022)
 What does the International Panel on Climate Change have to say about degrowth?
 
 </br>
-## :From the IPCC Working Group III’s 2014 Mitigation of Climate Change report, Summary for Policymakers:
+## :x IPCC
 
 
 Efficiency enhancements and behavioural changes, in order to reduce energy demand compared to baseline scenarios without compromising development, are a key mitigation strategy in scenarios reaching atmospheric CO2eq concentrations of about 450 or 500ppm by 2100 (robust evidence, high agreement). Near-term reductions in energy demand are an important element of cost-effective mitigation strategies, provide more flexibility for reducing carbon intensity in the energy supply sector, hedge against related supply-side risks, avoid lock-in to carbon intensive infrastructures, and are associated with important co-benefits. Both integrated and sectoral studies provide similar estimates for energy demand reductions in the transport, buildings and industry sectors for 2030 and 2050 (IPCC 2014, 21).
