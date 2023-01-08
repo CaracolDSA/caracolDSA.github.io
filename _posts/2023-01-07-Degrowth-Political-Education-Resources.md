@@ -1,7 +1,11 @@
 ---
 published: false
+layout: post
+author: Caracol
+tags: DSA-Degrowth
+excerpt_separator: <!--more-->
 ---
-## What is degrowth?*
+## What is degrowth?
 
 ### : As defined in the book The Future is Degrowth, Schemelzer et al., 2022,
 
@@ -201,8 +205,4 @@ Technical and behavioural mitigation measures for all transport modes, plus new 
 Improvements in GHG emission efficiency and in the efficiency of material use, recycling and re-use of
 materials and products, and overall reductions in product demand (e.g., through a more intensive use of products) and service demand could, in addition to energy efficiency, help reduce GHG emissions below the baseline level in the industry sector (medium evidence, high agreement). Many emission-reducing options are cost effective, profitable and associated with multiple co-benefits (better environmental compliance, health benefits etc.). In the long term, a shift to low-carbon electricity, new industrial processes, radical product innovations (e.g., alternatives to cement), or CCS (e.g., to mitigate process emissions) could contribute to significant GHG emission reductions. Lack of policy and experiences in material and product service efficiency are major barriers (IPCC 2014, 25).
 
-Systemic approaches and collaborative activities across companies and sectors can reduce energy and material consumption and thus GHG emissions (robust evidence, high agreement). The application of cross-cutting technologies (e.g., efficient motors) and measures (e.g., reducing air or steam leaks) in both large energy intensive industries and small and medium enterprises can improve process performance and plant efficiency cost-effectively. Cooperation across companies (e.g., in industrial parks) and sectors could include the sharing of infrastructure, information, and waste heat utilization (IPCC 2014, 25). 
-
-
-
-
+Systemic approaches and collaborative activities across companies and sectors can reduce energy and material consumption and thus GHG emissions (robust evidence, high agreement). The application of cross-cutting technologies (e.g., efficient motors) and measures (e.g., reducing air or steam leaks) in both large energy intensive industries and small and medium enterprises can improve process performance and plant efficiency cost-effectively. Cooperation across companies (e.g., in industrial parks) and sectors could include the sharing of infrastructure, information, and waste heat utilization (IPCC 2014, 25).
