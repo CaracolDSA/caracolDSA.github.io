@@ -5,7 +5,7 @@ author: Caracol
 tags: DSA-Degrowth
 excerpt_separator: <!--more-->
 ---
-## What is degrowth?
+# What is degrowth?
 
 ### : As defined in the book The Future is Degrowth, Schemelzer et al., 2022,
 
@@ -106,17 +106,17 @@ Giorgos Kallis provides a clear and succinct guide to the central ideas of degro
 
 ## Videos
 
-[:Demystifying Degrowth Rosa Luxembourg NYC](https://www.youtube.com/watch?v=ELfaaMLmhus)(2:17)
+[:Demystifying Degrowth Rosa Luxembourg NYC](https://www.youtube.com/watch?v=ELfaaMLmhus) (2:17)
 
-[:What is degrowth? CNBC](https://www.youtube.com/watch?v=Ia8u5P0KbPQ)(6:36) 
+[:What is degrowth? CNBC](https://www.youtube.com/watch?v=Ia8u5P0KbPQ) (6:36) 
 
-[:Introduction to Degrowth with Massachussetts Ecosocialists](https://www.youtube.com/watch?v=Oc0Dj1sXOdI)(41:00)
+[:Introduction to Degrowth with Massachussetts Ecosocialists](https://www.youtube.com/watch?v=Oc0Dj1sXOdI) (41:00)
 
 [Degrowth Talks](https://www.youtube.com/channel/UCnmLreZXaPwgAdFhWmJbKBA) (various - these are long but highly recommended watching)
-- [:The Green New Deal and the Political Economy of Degrowth](https://www.youtube.com/watch?v=vBYZvakOGBQ)(1:37:43)
+- [:The Green New Deal and the Political Economy of Degrowth](https://www.youtube.com/watch?v=vBYZvakOGBQ) (1:37:43)
 
 
-[:Degrowth: A vocabulary for a new era](https://www.youtube.com/watch?v=PHXxXWSJT98&t=2278s)(1:48:11)
+[:Degrowth: A vocabulary for a new era](https://www.youtube.com/watch?v=PHXxXWSJT98&t=2278s) (1:48:11)
 
 [:Degrowth: A realistic demand for the impossible](https://www.youtube.com/watch?v=VQfV23a5ZNQ&t=1287s) (54:38)
 
@@ -191,6 +191,7 @@ Schmelzer et al. in The Future is Degrowth (2022)
 “...Georgescu-Roegen showed how what we call the economy, which is understood largely as a system of market exchange, is in fact a complex system of flows and stocks of energy and materials, each of which has different properties and potential for sustainable re-use.” (81)
 What does the International Panel on Climate Change have to say about degrowth?
 
+</br>
 ## :From the IPCC Working Group III’s 2014 Mitigation of Climate Change report, Summary for Policymakers:
 
 
