@@ -54,7 +54,6 @@ prose:
     - tale.gemspec
     - /_sass
     - /.github
-    - /_layouts
     - /_includes
   metadata:
     _posts:
