@@ -62,6 +62,10 @@ prose:
         field:
           element: "hidden"
           value: "post"
+      - name: "published"
+        field:
+          element: "hidden"
+          value: "true"
       - name: "title"
         field:
         element: "text"
