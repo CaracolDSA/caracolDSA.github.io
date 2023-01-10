@@ -42,10 +42,8 @@ disqus:
 
 #-----------------------------Prose.io config below -------------------------
 
-rooturl: ''
-  siteurl: 'http://prose.github.io/starter/'
-  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
-  media: 'media'
+  siteurl: 'https://CaracolDSA.github.io'
+  media: 'Assets'
   ignore:
     - index.md
     - _config.yml
@@ -79,7 +77,8 @@ rooturl: ''
            		element: "text"
                 label: "New tags"
                 value: ""
-         - name: "author" 
+       
+       - name: "author" 
          field:
          element: "text"
          value: "Caracol"
