@@ -32,7 +32,7 @@ plugins:
 
 # Permalinks
 permalink:      /post/:year-:month-:day/:title
-paginate:       3
+paginate:       9
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
@@ -50,13 +50,23 @@ prose:
     - index.md
     - /_layouts
     - /_includes
+    
+    
   metadata:
-    _posts:
+  metadata:
+     _posts:
       - name: "layout"
         field:
           element: "hidden"
-          value: "blog"
-      - name: "tags"
+          value: "post"
+          
+        
+     - name: "title"
+      field:
+        element: "text"
+        label: "title"
+        
+     - name: "tags"
         field:
           element: "multiselect"
           label: "Add Tags"
@@ -74,6 +84,8 @@ prose:
          field:
          element: "text"
          value: "Caracol"
+
+
 - name: "excerpt_separator"
 field:
 element: "hidden"
