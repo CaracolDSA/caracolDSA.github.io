@@ -46,7 +46,7 @@ prose:
   rooturl: 
   siteurl: 'http://caracolDSA.github.io/'
   relativeLinks:
-  media: 'assets'
+  media: 'assets/media'
   ignore:
     - index.md
     - /_layouts
@@ -59,20 +59,10 @@ prose:
           value: "post"
       - name: "tags"
         field:
-          element: "multiselect"
+          element: "text"
           label: "Add Tags"
           placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
-              field:
-          field:
-          element: "text"
-          label: "New Tags"
-          placeholder: "Choose Tags"
-          
+                   
               
     _posts/static:
       - name: "layout"
