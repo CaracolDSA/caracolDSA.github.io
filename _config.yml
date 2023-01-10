@@ -42,49 +42,45 @@ disqus:
 
 #-----------------------------Prose.io config below -------------------------
 
-  siteurl: 'https://CaracolDSA.github.io'
-  media: 'Assets'
+prose:
+  rooturl: 
+  siteurl: 'http://caracolDSA.github.io/'
+  relativeLinks:
+  media: 'assets'
   ignore:
     - index.md
-    - _config.yml
     - /_layouts
     - /_includes
-    
   metadata:
-     _posts:
+    _posts:
       - name: "layout"
         field:
           element: "hidden"
           value: "post"
-          
-        
-     - name: "title"
-      field:
-        element: "text"
-        label: "title"
-        
-     - name: "tags"
+      - name: "tags"
         field:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
           options:
-            - name: "DSA-Degrowth"
+            - name: "Apples"
               value: "apples"
             - name: "Bananas"
               value: "bananas"
-           field:
-           		element: "text"
-                label: "New tags"
-                value: ""
-       
-       - name: "author" 
-         field:
-         element: "text"
-         value: "Caracol"
-
-
-- name: "excerpt_separator"
-field:
-element: "hidden"
-value: "<!--more-->"
+              field:
+          field:
+          element: "text"
+          label: "New Tags"
+          placeholder: "Choose Tags"
+          
+              
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
