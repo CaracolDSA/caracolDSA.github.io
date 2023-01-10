@@ -48,7 +48,12 @@ prose:
   relativeLinks:
   media: 'assets/media'
   ignore:
-    - index.md
+    - index.html
+    - Gemfile
+    - .gitignore
+    - tale.gemspec
+    - /_sass
+    - /.github
     - /_layouts
     - /_includes
   metadata:
@@ -57,6 +62,10 @@ prose:
         field:
           element: "hidden"
           value: "post"
+      - name: "title"
+        field:
+        element: "text"
+        label: "title"
       - name: "tags"
         field:
           element: "text"
