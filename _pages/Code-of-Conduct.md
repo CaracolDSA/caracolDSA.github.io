@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Code of COnduct"
-author: 
+title: Code of Conduct
+author: null
 permalink: /code-of-conduct/
+published: true
 ---
 
 # Contributor Covenant Code of Conduct
