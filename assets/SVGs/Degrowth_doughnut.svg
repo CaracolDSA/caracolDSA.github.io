@@ -1,31 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="enable-background:new 0 0 325.7 232.2" viewBox="0 0 325.7 232.2">
-  <style>
-    .st0{fill:#6fb747}.st1{fill:#4a626f}.st2{fill:#0d7243}.st4{fill:none;stroke:#ec2227;stroke-width:4;stroke-miterlimit:10}.st7{fill:#fff}.st8{font-family:&quot;DINOT-Bold&quot;}.st9{font-size:9px}.st10{font-family:&quot;DINOT-Medium&quot;}.st11{font-size:10px}
-  </style>
-  <g id="Layer_1">
-    <path d="M306.3 82.4H15.9c-.7 0-1.5 0-2.1.6 0 2.9-.1 5.8-.1 8.6 0 14.3 0 28.6.1 43 1.2 1 2.7.6 4.1.6h288.4c.3-9.3-.6-18.5 0-27.8-.6-8.3-.2-16.7 0-25z" class="st0"/>
-    <path d="M306.3 82.4c-.2 8.4-.6 16.7 0 25.1.6-8.4-1.5-16.7 0-25.1-1.3 0 1.3 0 0 0z" class="st0"/>
-    <path d="M306.3 135.3c1 0-1 0 0 0-.2-9.3.7-18.5 0-27.8-.6 9.2.3 18.5 0 27.8z" class="st0"/>
-    <path d="M14.3 219.2c-.7 0-1.3.1-2 .1" class="st1"/>
-    <path d="M13.1 211.2c.7 0 1.3 0 2 .1" class="st1"/>
-    <path d="M16.4 72.6H15c-1-.1-1.3.2-1.3 1.2.1 3.1.1 6.2.1 9.3h292.5c.1-3.5-.4-7 0-10.5H16.4z" class="st2"/>
-    <path d="M306.3 134.6H13.8c0 2.8.1 5.5-.1 8.3-.1 1.9.5 2.3 2.3 2.3h290.3c.1-3.6.1-7.1 0-10.6z" class="st2"/>
-    <path d="M15.1 211.2c2.3 0 280.2-.1 282.5-.1.9 0 1.5 0 1.5-1.2 0-1.7.6-2 2.3-1.2l10.2 5.1c1.5.8 1.7 2 .2 2.8-3.5 2.1-7 4.1-10.5 6.1-1.2.7-2.4-.1-2.2-1.5.3-2-.7-2.1-2.3-2.1-2.3.1-280.2 0-282.5 0" style="fill:#49626d"/>
-  </g>
-  <g id="Layer_3">
-    <path d="M13.7 19.3c160.1 0 107.3 68.6 292.6 68.6" class="st4"/>
-    <path d="M13.7 194.4c160.1 0 107.3-65.4 292.6-65.4" class="st4"/>
-  </g>
-  <g id="text">
-    <text class="st10 st11" transform="translate(68.0585 60.2808)">Degrowth</text>
-    <text class="st10 st11" transform="translate(74.5262 162.0547)">Growth</text>
-    <text class="st10 st11" style="fill:#ec2227" transform="translate(141.2725 34.8162)">Rich Countries GDP</text>
-    <text class="st10 st11" transform="translate(244.4746 60.2806)">Post-Growth</text>
-    <text class="st10 st11" transform="translate(244.4746 163.363)">Post-Growth</text>
-    <text class="st10 st11" style="fill:#eb232a" transform="translate(141.2725 192.9426)">Poor Countries GDP</text>
-    <text class="st7 st8 st9" transform="translate(53.0006 80.8188)">ECOLOGICAL CEILING</text>
-    <text class="st7 st8 st9" transform="translate(52.5728 142.8684)">SOCIAL FOUNDATION</text>
-    <text class="st7 st8 st9" transform="translate(48.4645 110.7396)">Safe space for humanity</text>
-    <text class="st7 st8 st9" transform="translate(217.0165 110.7396)">Reduce Inequality</text>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 325.7 232.2" overflow="visible" xml:space="preserve">
+<g id="Layer_1_00000174561447533557222520000004364918306218701723_">
+	<path fill="#6FB747" d="M306.3,82.4H15.9c-0.7,0-1.5,0-2.1,0.6c0,2.9-0.1,5.8-0.1,8.6c0,14.3,0,28.6,0.1,43c1.2,1,2.7,0.6,4.1,0.6
+		h288.4c0.3-9.3-0.6-18.5,0-27.8C305.7,99.1,306.1,90.7,306.3,82.4z"/>
+	<path fill="#6FB747" d="M306.3,82.4c-0.2,8.4-0.6,16.7,0,25.1C306.9,99.1,304.8,90.8,306.3,82.4C305,82.4,307.6,82.4,306.3,82.4z"
+		/>
+	<path fill="#6FB747" d="M306.3,135.3C307.3,135.3,305.3,135.3,306.3,135.3c-0.2-9.3,0.7-18.5,0-27.8
+		C305.7,116.7,306.6,126,306.3,135.3z"/>
+	<path fill="#4A626F" d="M14.3,219.2c-0.7,0-1.3,0.1-2,0.1"/>
+	<path fill="#4A626F" d="M13.1,211.2c0.7,0,1.3,0,2,0.1"/>
+	<path fill="#0D7243" d="M16.4,72.6H15c-1-0.1-1.3,0.2-1.3,1.2c0.1,3.1,0.1,6.2,0.1,9.3h292.5c0.1-3.5-0.4-7,0-10.5H16.4z"/>
+	<path fill="#0D7243" d="M306.3,134.6H13.8c0,2.8,0.1,5.5-0.1,8.3c-0.1,1.9,0.5,2.3,2.3,2.3h290.3
+		C306.4,141.6,306.4,138.1,306.3,134.6z"/>
+	<path fill="#49626D" d="M15.1,209.7c2.3,0,280.2-0.1,282.5-0.1c0.9,0,1.5,0,1.5-1.4c0-1.9,0.6-2.3,2.3-1.4l10.2,5.8
+		c1.5,0.9,1.7,2.3,0.2,3.2c-3.5,2.4-7,4.6-10.5,6.9c-1.2,0.8-2.4-0.1-2.2-1.7c0.3-2.3-0.7-2.4-2.3-2.4c-2.3,0.1-280.2,0-282.5,0"/>
+</g>
+<g id="Layer_3">
+	<path fill="none" stroke="#EC2227" stroke-width="4" stroke-miterlimit="10" d="M13.7,19.3c160.1,0,107.3,68.6,292.6,68.6"/>
+	<path fill="none" stroke="#EC2227" stroke-width="4" stroke-miterlimit="10" d="M13.7,194.4c160.1,0,107.3-65.4,292.6-65.4"/>
+</g>
+<g id="text">
+	<text transform="matrix(1 0 0 1 68.0585 60.2808)" font-family="'Verdana'" font-size="10px">Degrowth</text>
+	<text transform="matrix(1 0 0 1 74.5262 162.0547)" font-family="'Verdana'" font-size="10px">Growth</text>
+	<text transform="matrix(1 0 0 1 141.2725 34.8162)" fill="#EC2227" font-family="'Verdana'" font-size="10px">Rich Countries GDP</text>
+	<text transform="matrix(1 0 0 1 244.4746 60.2806)" font-family="'Verdana'" font-size="10px">P</text>
+	<text transform="matrix(1 0 0 1 250.2607 60.2806)" font-family="'Verdana'" font-size="10px">o</text>
+	<text transform="matrix(1 0 0 1 256.3301 60.2806)" font-family="'Verdana'" font-size="10px">s</text>
+	<text transform="matrix(1 0 0 1 261.54 60.2806)" font-family="'Verdana'" font-size="10px">t</text>
+	<text transform="matrix(1 0 0 1 265.2852 60.2806)" font-family="'Verdana'" font-size="10px">-</text>
+	<text transform="matrix(1 0 0 1 269.8262 60.2806)" font-family="'Verdana'" font-size="10px">G</text>
+	<text transform="matrix(1 0 0 1 277.5801 60.2806)" font-family="'Verdana'" font-size="10px">r</text>
+	<text transform="matrix(1 0 0 1 281.8477 60.2806)" font-family="'Verdana'" font-size="10px">o</text>
+	<text transform="matrix(1 0 0 1 287.917 60.2806)" font-family="'Verdana'" font-size="10px">w</text>
+	<text transform="matrix(1 0 0 1 296.1006 60.2806)" font-family="'Verdana'" font-size="10px">t</text>
+	<text transform="matrix(1 0 0 1 300.041 60.2806)" font-family="'Verdana'" font-size="10px">h</text>
+	<text transform="matrix(1 0 0 1 244.4746 163.363)" font-family="'Verdana'" font-size="10px">P</text>
+	<text transform="matrix(1 0 0 1 250.2607 163.363)" font-family="'Verdana'" font-size="10px">o</text>
+	<text transform="matrix(1 0 0 1 256.3301 163.363)" font-family="'Verdana'" font-size="10px">s</text>
+	<text transform="matrix(1 0 0 1 261.54 163.363)" font-family="'Verdana'" font-size="10px">t</text>
+	<text transform="matrix(1 0 0 1 265.2852 163.363)" font-family="'Verdana'" font-size="10px">-</text>
+	<text transform="matrix(1 0 0 1 269.8262 163.363)" font-family="'Verdana'" font-size="10px">G</text>
+	<text transform="matrix(1 0 0 1 277.5801 163.363)" font-family="'Verdana'" font-size="10px">r</text>
+	<text transform="matrix(1 0 0 1 281.8477 163.363)" font-family="'Verdana'" font-size="10px">o</text>
+	<text transform="matrix(1 0 0 1 287.917 163.363)" font-family="'Verdana'" font-size="10px">w</text>
+	<text transform="matrix(1 0 0 1 296.1006 163.363)" font-family="'Verdana'" font-size="10px">t</text>
+	<text transform="matrix(1 0 0 1 300.041 163.363)" font-family="'Verdana'" font-size="10px">h</text>
+	<text transform="matrix(1 0 0 1 141.2725 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">P</text>
+	<text transform="matrix(1 0 0 1 147.0586 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">o</text>
+	<text transform="matrix(1 0 0 1 153.128 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">o</text>
+	<text transform="matrix(1 0 0 1 159.1973 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">r</text>
+	<text transform="matrix(1 0 0 1 163.4649 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px"> </text>
+	<text transform="matrix(1 0 0 1 166.9805 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">C</text>
+	<text transform="matrix(1 0 0 1 173.9629 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">o</text>
+	<text transform="matrix(1 0 0 1 180.0323 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">u</text>
+	<text transform="matrix(1 0 0 1 186.3604 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">n</text>
+	<text transform="matrix(1 0 0 1 192.6885 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">t</text>
+	<text transform="matrix(1 0 0 1 196.629 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">r</text>
+	<text transform="matrix(1 0 0 1 200.8965 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">i</text>
+	<text transform="matrix(1 0 0 1 203.6407 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">e</text>
+	<text transform="matrix(1 0 0 1 209.5977 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">s</text>
+	<text transform="matrix(1 0 0 1 214.8077 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px"> </text>
+	<text transform="matrix(1 0 0 1 218.3233 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">G</text>
+	<text transform="matrix(1 0 0 1 226.0772 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">D</text>
+	<text transform="matrix(1 0 0 1 233.7823 192.9426)" fill="#EB232A" font-family="'Verdana'" font-size="10px">P</text>
+	<text transform="matrix(1 0 0 1 53.0006 81.8196)" fill="#FFFFFF" font-family="'Verdana-Bold'" font-size="9px">ECOLOGICAL CEILING</text>
+	<text transform="matrix(1 0 0 1 52.5728 142.8684)" fill="#FFFFFF" font-family="'Verdana-Bold'" font-size="9px">SOCIAL FOUNDATION</text>
+	<text transform="matrix(1 0 0 1 150.9039 216.9471)" fill="#FFFFFF" font-family="'Verdana-Bold'" font-size="8.6676px">TIME</text>
+	<text transform="matrix(1 0 0 1 48.4645 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">S</text>
+	<text transform="matrix(1 0 0 1 54.6168 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">a</text>
+	<text transform="matrix(1 0 0 1 60.0221 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">f</text>
+	<text transform="matrix(1 0 0 1 63.1862 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">e</text>
+	<text transform="matrix(1 0 0 1 68.5475 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px"> </text>
+	<text transform="matrix(1 0 0 1 71.7116 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">s</text>
+	<text transform="matrix(1 0 0 1 76.4005 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">p</text>
+	<text transform="matrix(1 0 0 1 82.008 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">a</text>
+	<text transform="matrix(1 0 0 1 87.4132 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">c</text>
+	<text transform="matrix(1 0 0 1 92.1022 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">e</text>
+	<text transform="matrix(1 0 0 1 97.4635 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px"> </text>
+	<text transform="matrix(1 0 0 1 100.6276 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">f</text>
+	<text transform="matrix(1 0 0 1 103.7916 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">o</text>
+	<text transform="matrix(1 0 0 1 109.2541 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">r</text>
+	<text transform="matrix(1 0 0 1 113.0949 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px"> </text>
+	<text transform="matrix(1 0 0 1 116.2589 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">h</text>
+	<text transform="matrix(1 0 0 1 121.9542 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">u</text>
+	<text transform="matrix(1 0 0 1 127.6496 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">m</text>
+	<text transform="matrix(1 0 0 1 136.4035 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">a</text>
+	<text transform="matrix(1 0 0 1 141.8087 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">n</text>
+	<text transform="matrix(1 0 0 1 147.5041 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">i</text>
+	<text transform="matrix(1 0 0 1 149.9738 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">t</text>
+	<text transform="matrix(1 0 0 1 153.4762 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">y</text>
+	<text transform="matrix(1 0 0 1 217.0165 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">R</text>
+	<text transform="matrix(1 0 0 1 223.0546 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">e</text>
+	<text transform="matrix(1 0 0 1 228.4159 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">d</text>
+	<text transform="matrix(1 0 0 1 234.0233 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">u</text>
+	<text transform="matrix(1 0 0 1 239.7186 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">c</text>
+	<text transform="matrix(1 0 0 1 244.4076 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">e</text>
+	<text transform="matrix(1 0 0 1 249.7689 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px"> </text>
+	<text transform="matrix(1 0 0 1 252.933 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">I</text>
+	<text transform="matrix(1 0 0 1 256.7211 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">n</text>
+	<text transform="matrix(1 0 0 1 262.4164 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">e</text>
+	<text transform="matrix(1 0 0 1 267.7777 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">q</text>
+	<text transform="matrix(1 0 0 1 273.3851 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">u</text>
+	<text transform="matrix(1 0 0 1 279.0804 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">a</text>
+	<text transform="matrix(1 0 0 1 284.4857 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">l</text>
+	<text transform="matrix(1 0 0 1 286.9554 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">i</text>
+	<text transform="matrix(1 0 0 1 289.4252 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">t</text>
+	<text transform="matrix(1 0 0 1 292.9276 110.7396)" fill="#FFFFFF" font-family="'Verdana'" font-size="9px">y</text>
+</g>
 </svg>
