@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: Posting on CaracolDSA.io
+title: Website how-to
 ---
 ## Posting articles
 
@@ -48,6 +48,11 @@ A great “plugin” i added to the website is [:nutshell](https://ncase.me/nuts
 Previewing an article before posting can be tricky. I’m still figuring out how to make it easier. For now, the best bet is to either use the [Prose.io](http://Prose.io/s) text editor’s preview button, or if you use a lot of nutshells, the [nutshell text editor](https://ncase.me/nutshell/try/). Worst case, just publish, wait 30-60 secs, and refresh the site.
 
 For this reason, changing the look of the website is also difficult. Modifying jekyll themes means editing code. Changing the fonts is easy enough - just find and replace font names in the .CSS files. Anything more substantial, however, has a bit of a learning curve. 
+
+Some CSS design quirks to fix:
+
+-  limiting the maximum width of an image so that it doesnt span the fill width of the site.
+- Instead of embedding full image, find a way to replace the embedded image with a low-rez preview, and enable full size, gallery view kind of thing on click.
 
 ## Themes
 
