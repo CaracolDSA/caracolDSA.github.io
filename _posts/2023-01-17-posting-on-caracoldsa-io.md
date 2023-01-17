@@ -2,7 +2,6 @@
 published: true
 layout: post
 title: Posting on CaracolDSA.io
-tags: ''
 ---
 # How to post articles.
 
@@ -18,9 +17,9 @@ The whole site is hosted in [github.com](notion://www.notion.so/github.com) as a
 
 Any changes you make can be "pushed" or uploaded to the main repo hosted in [github.com](http://github.com/). Any time this happens, the site gets automatically rebuilt and published (takes about 30-60 seconds). If you added a new article to the _posts folder, it would automatically appear on the home page, on the top of the recent articles list. 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/15bfca75-bdda-41b5-889a-8220e36afc15/Untitled.png)
+![github desktop example]({{site.baseurl}}/assets/media/githubdesktop.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7abda338-3c74-41e2-ae34-0685619522dd/Untitled.png)
+![folders example]({{site.baseurl}}/assets/media/githubfolders.png)
 
 ## Prose.io
 
@@ -29,22 +28,22 @@ To avoid any tech headaches, the best tool for super straightforward content and
 1. Go to [github.com](http://github.com) and log into the DegrowDSA account.
 2. Go to [Prose.](http://Prose.IO)io and give it access to your github account. Once you’re connected, you get this interface. If you navigate to _posts, you’ll see all currently published posts. From here, you can click on “new file” to start a new post. 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/db3e3a80-e9d9-4ae9-ba43-0880aa19e73d/Untitled.png)
+![prose main]({{site.baseurl}}/assets/media/prose1.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/911f6818-51e8-41f8-a215-2272864f94a2/Untitled.png)
+![prose posts]({{site.baseurl}}/assets/media/prose2.png)
 
 1. Here’s how the editor looks. At this point you can start typing, or you could instead use another edito ([Notion.so](http://Notion.so), google docs, word, etc) and then just copy paste your text here. The text appears in markdown format. if you’ve used wordpress before, you might be familiar with it. [You just need to make sure things are formatted in the right way - links, images, headings etc.](#markdown) - 
     
     (When you copy-paste from Notion.so, the “rich text” gets automatically formatted to markdown. It might work with other tools. your milage may vary)
     
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1272ab8f-acbf-4036-b794-d0c3e2659411/Untitled.png)
+![prose text editor]({{site.baseurl}}/assets/media/prose3.png)
 
 ## Nutshell
 
 A great “plugin” i added to the website is [:nutshell](https://ncase.me/nutshell/#WhatIsNutshell). It allows you to next short explanations on the  site, as you might have just tried. [Check out the site](https://ncase.me/nutshell) to learn more about it and how to use it. (Nicki Case, the tool’s creator, is the best)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22d426d4-295a-4c0c-a649-5f0bea72181a/Untitled.png)
+![Nutshell]({{site.baseurl}}/assets/media/nutshell1.png)
 
 ## :x whatisgit
 
