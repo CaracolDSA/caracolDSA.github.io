@@ -3,8 +3,6 @@ published: true
 layout: post
 title: Posting on CaracolDSA.io
 ---
-# How to post articles.
-
 ## Posting articles
 
 The whole site is hosted in [github.com](notion://www.notion.so/github.com) as a repo (repository). This allows us to modify it using different tools.
@@ -32,7 +30,7 @@ To avoid any tech headaches, the best tool for super straightforward content and
 
 ![prose posts]({{site.baseurl}}/assets/media/prose2.png)
 
-1. Here’s how the editor looks. At this point you can start typing, or you could instead use another edito ([Notion.so](http://Notion.so), google docs, word, etc) and then just copy paste your text here. The text appears in markdown format. if you’ve used wordpress before, you might be familiar with it. [You just need to make sure things are formatted in the right way - links, images, headings etc.](#markdown) - 
+1. Here’s how the editor looks. At this point you can start typing, or you could instead use another edito ([Notion.so](http://Notion.so), google docs, word, etc) and then just copy paste your text here. The text appears in markdown format. if you’ve used wordpress before, you might be familiar with it. [:You just need to make sure things are formatted in the right way - links, images, headings etc.](#markdown) - 
     
     (When you copy-paste from Notion.so, the “rich text” gets automatically formatted to markdown. It might work with other tools. your milage may vary)
     
@@ -41,9 +39,29 @@ To avoid any tech headaches, the best tool for super straightforward content and
 
 ## Nutshell
 
-A great “plugin” i added to the website is [:nutshell](https://ncase.me/nutshell/#WhatIsNutshell). It allows you to next short explanations on the  site, as you might have just tried. [Check out the site](https://ncase.me/nutshell) to learn more about it and how to use it. (Nicki Case, the tool’s creator, is the best)
+A great “plugin” i added to the website is [:nutshell](https://ncase.me/nutshell/#WhatIsNutshell). It allows you to nest short explanations on the  site, as you might have just tried. [Check out the site](https://ncase.me/nutshell) to learn more about it and how to use it. (Nicki Case, the tool’s creator, is the best)
 
 ![Nutshell]({{site.baseurl}}/assets/media/nutshell1.png)
+
+## Limitations
+
+Previewing an article before posting can be tricky. I’m still figuring out how to make it easier. For now, the best bet is to either use the [Prose.io](http://Prose.io/s) text editor’s preview button, or if you use a lot of nutshells, the [nutshell text editor](https://ncase.me/nutshell/try/). Worst case, just publish, wait 30-60 secs, and refresh the site.
+
+For this reason, changing the look of the website is also difficult. Modifying jekyll themes means editing code. Changing the fonts is easy enough - just find and replace font names in the .CSS files. Anything more substantial, however, has a bit of a learning curve. 
+
+## Themes
+
+The Jekyll community has many themes that can be swapped to with little effort. I think a theme that has thumbnails next to the posts is the next goal.  Here's some I got my eye on.
+- [Alembic](https://jekyllthemes.io/theme/alembic)
+- [Cool gallery theme](https://jekyllthemes.dev/maxima-minimal-blog-and-magazine-jekyll-theme/)
+- 
+
+## Why this instead of Wordpress?
+
+1. Free
+2. Lightweight - follows some of those sustainable web principles
+3. Easy to back up
+4. [More detailed reasons here.](https://www.sitepoint.com/wordpress-vs-jekyll-might-want-make-switch/)
 
 ## :x whatisgit
 
