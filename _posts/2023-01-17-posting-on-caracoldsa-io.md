@@ -53,13 +53,14 @@ Some CSS design quirks to fix:
 
 -  limiting the maximum width of an image so that it doesnt span the fill width of the site.
 - Instead of embedding full image, find a way to replace the embedded image with a low-rez preview, and enable full size, gallery view kind of thing on click.
+- enable metadata edits, like author, tags etc.
 
 ## Themes
 
 The Jekyll community has many themes that can be swapped to with little effort. I think a theme that has thumbnails next to the posts is the next goal.  Here's some I got my eye on.
 - [Alembic](https://jekyllthemes.io/theme/alembic)
 - [Cool gallery theme](https://jekyllthemes.dev/maxima-minimal-blog-and-magazine-jekyll-theme/)
-- 
+
 
 ## Why this instead of Wordpress?
 
